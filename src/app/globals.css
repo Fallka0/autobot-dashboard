@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  --surface: #ffffff;
+  --surface-muted: #f7f7fb;
+  --surface-elevated: rgba(255, 255, 255, 0.9);
+  --surface-strong: rgba(255, 255, 255, 0.96);
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-strong: rgba(15, 23, 42, 0.14);
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #9ca3af;
+  --text-soft: #6b7280;
+  --accent-solid: #22d3ee;
+  --accent-strong: #06b6d4;
+  --accent-border: rgba(34, 211, 238, 0.3);
+  --accent-soft: rgba(34, 211, 238, 0.1);
+  --accent-glow: 0 12px 32px rgba(34, 211, 238, 0.22);
+  --success-soft: rgba(34, 197, 94, 0.12);
+  --danger-soft: rgba(239, 68, 68, 0.1);
+  --warning-soft: rgba(245, 158, 11, 0.12);
+  --success-text: #15803d;
+  --danger-text: #b91c1c;
+  --warning-text: #b45309;
+  --info-text: #0f766e;
+  --neutral-soft: rgba(15, 23, 42, 0.06);
+  --neutral-border: rgba(15, 23, 42, 0.08);
+  --header-bg: rgba(5, 5, 5, 0.9);
+  --header-border: rgba(255, 255, 255, 0.1);
+  --header-pill: rgba(255, 255, 255, 0.05);
+  --header-text: #ffffff;
+  --header-text-muted: rgba(255, 255, 255, 0.8);
+  --header-subtext: rgba(255, 255, 255, 0.45);
+  --shadow-card: 0 18px 50px rgba(15, 23, 42, 0.08);
+  --shadow-card-soft: 0 14px 40px rgba(15, 23, 42, 0.06);
+  --background: #f3f5fb;
+  --foreground: #111827;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  background:
+    radial-gradient(circle at top, rgba(8, 145, 178, 0.12), transparent 32%),
+    linear-gradient(180deg, #f7fbff 0%, #f3f5fb 100%);
+  color: var(--foreground);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-header {
+  border-color: var(--header-border);
+  background: var(--header-bg);
+  color: var(--header-text);
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-surface {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card-soft);
+}
+
+.app-card {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card-soft);
+}
+
+.app-chip {
+  background: var(--neutral-soft);
+  border: 1px solid var(--neutral-border);
+  color: var(--text-secondary);
+}
+
+.app-chip-info {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  color: var(--info-text);
+}
+
+.app-chip-success {
+  background: var(--success-soft);
+  color: var(--success-text);
+}
+
+.app-chip-warning {
+  background: var(--warning-soft);
+  color: var(--warning-text);
+}
+
+.app-chip-danger {
+  background: var(--danger-soft);
+  color: var(--danger-text);
+}
+
+.app-hero {
+  background:
+    radial-gradient(circle at top, rgba(8, 145, 178, 0.12), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  box-shadow: var(--shadow-card);
+}
+
+.app-hero-stat {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
