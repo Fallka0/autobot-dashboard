@@ -9,6 +9,20 @@
       "confidence": 0.8,
       "summary": "existing long position already open; new add is blocked",
       "symbol": "SPY",
+      "time": "19:14"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "time": "19:14"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "SPY",
       "time": "18:46"
     },
     {
@@ -58,26 +72,12 @@
       "confidence": 0.8,
       "summary": "existing long position already open; new add is blocked",
       "symbol": "QQQ",
-      "time": "17:14"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.72,
-      "summary": "breakout or pullback setup is required",
-      "symbol": "NVDA",
-      "time": "17:14"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.69,
-      "summary": "relative strength versus SPY must be non-negative",
-      "symbol": "MSFT",
       "time": "17:14"
     }
   ],
-  "equity": 100005.6,
-  "exposurePct": 7.030300264185205,
-  "lastSync": "2026-04-23T18:46:36.986242Z",
+  "equity": 100002.1,
+  "exposurePct": 7.0272349695957,
+  "lastSync": "2026-04-23T19:15:00.964108Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -153,20 +153,20 @@
   ],
   "positions": [
     {
-      "marketValue": 24.959174,
-      "sizePct": 0.025,
+      "marketValue": 24.925088,
+      "sizePct": 0.0249,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": -0.163
+      "unrealizedPnlPct": -0.3
     },
     {
-      "marketValue": 7005.734787,
-      "sizePct": 7.0053,
+      "marketValue": 7002.373015,
+      "sizePct": 7.0022,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.082
+      "unrealizedPnlPct": 0.034
     }
   ],
   "watchlist": [
@@ -207,5 +207,5 @@
       "symbol": "MSFT"
     }
   ],
-  "weeklyPnlPct": 0.0056
+  "weeklyPnlPct": 0.0021
 }
