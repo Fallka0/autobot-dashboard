@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 
 export async function GET() {
   try {
-    const response = await fetch(snapshotUrl, { cache: "no-store" });
+    const response = await fetch(`${snapshotUrl}?ts=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`snapshot fetch failed with ${response.status}`);
     }
