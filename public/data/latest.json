@@ -1,23 +1,9 @@
 {
   "benchmark": "SPY",
   "botStatus": "Running",
-  "cash": 100000.0,
+  "cash": 92975.0,
   "closedOutcomes": 0,
   "decisions": [
-    {
-      "action": "HOLD",
-      "confidence": 0.49,
-      "summary": "trend alignment is required",
-      "symbol": "BRK.B",
-      "time": "17:14"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.65,
-      "summary": "relative strength versus SPY must be non-negative",
-      "symbol": "GOOGL",
-      "time": "17:14"
-    },
     {
       "action": "HOLD",
       "confidence": 0.72,
@@ -73,15 +59,29 @@
       "summary": "existing long position already open; new add is blocked",
       "symbol": "SPY",
       "time": "17:29"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "time": "18:03"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "SPY",
+      "time": "18:03"
     }
   ],
-  "equity": 100000.0,
-  "exposurePct": 7.007635315311061,
-  "lastSync": "2026-04-23T18:00:59.867886Z",
+  "equity": 99992.52,
+  "exposurePct": 7.01806307930757,
+  "lastSync": "2026-04-23T18:03:49.822440Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
-    "openTrackedOutcomes": 0
+    "openTrackedOutcomes": 8
   },
   "marketNews": {
     "blocking": [],
@@ -153,20 +153,20 @@
   ],
   "positions": [
     {
-      "marketValue": 0.0,
-      "sizePct": 0.024903409570546063,
+      "marketValue": 24.933134,
+      "sizePct": 0.0249,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": -7.40015803238757
+      "unrealizedPnlPct": -0.267
     },
     {
-      "marketValue": 0.0,
-      "sizePct": 6.9824470028881525,
+      "marketValue": 6992.188824,
+      "sizePct": 6.9927,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": -6.091636569648041
+      "unrealizedPnlPct": -0.11199999999999999
     }
   ],
   "watchlist": [
@@ -207,5 +207,5 @@
       "symbol": "MSFT"
     }
   ],
-  "weeklyPnlPct": -0.0191
+  "weeklyPnlPct": -0.0075
 }
