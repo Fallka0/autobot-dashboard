@@ -1,42 +1,91 @@
 {
   "benchmark": "SPY",
   "botStatus": "Running",
-  "cash": 92975,
+  "cash": 100000.0,
   "closedOutcomes": 0,
   "decisions": [
     {
       "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "symbol": "SPY",
-      "time": "17:15"
+      "confidence": 0.49,
+      "summary": "trend alignment is required",
+      "symbol": "BRK.B",
+      "time": "17:14"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.65,
+      "summary": "relative strength versus SPY must be non-negative",
+      "symbol": "GOOGL",
+      "time": "17:14"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.72,
+      "summary": "breakout or pullback setup is required",
+      "symbol": "IWM",
+      "time": "17:14"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.49,
+      "summary": "trend alignment is required",
+      "symbol": "META",
+      "time": "17:14"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.69,
+      "summary": "relative strength versus SPY must be non-negative",
+      "symbol": "MSFT",
+      "time": "17:14"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.72,
+      "summary": "breakout or pullback setup is required",
+      "symbol": "NVDA",
+      "time": "17:14"
     },
     {
       "action": "HOLD",
       "confidence": 0.8,
-      "summary": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "summary": "existing long position already open; new add is blocked",
       "symbol": "QQQ",
-      "time": "17:15"
+      "time": "17:14"
     },
     {
-      "action": "BUY",
+      "action": "HOLD",
       "confidence": 0.8,
-      "summary": "Setup passed trend, liquidity, reward/risk, and research checks.",
+      "summary": "existing long position already open; new add is blocked",
       "symbol": "SPY",
-      "time": "17:12"
+      "time": "17:14"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "time": "17:29"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "SPY",
+      "time": "17:29"
     }
   ],
-  "equity": 99980.92,
-  "exposurePct": 7.02,
-  "lastSync": "2026-04-23T17:29:00Z",
+  "equity": 100000.0,
+  "exposurePct": 7.007635315311061,
+  "lastSync": "2026-04-23T18:00:59.867886Z",
   "learning": {
     "closedWithPnl": 0,
-    "note": "The bot is still collecting completed trade cycles before changing sizing or blocking setups.",
-    "openTrackedOutcomes": 8
+    "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
+    "openTrackedOutcomes": 0
   },
   "marketNews": {
     "blocking": [],
-    "headline": "Markets are leaning back toward earnings strength while still watching Fed and inflation risk.",
+    "headline": "Market Up on Extended Ceasefire; Tesla Due Later: <strong>The S&amp;P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations",
     "watching": [
       "fed",
       "inflation",
@@ -48,61 +97,115 @@
   "openPositions": 2,
   "orders": [
     {
-      "detail": "Filled $7,000 paper BUY at 707.96.",
-      "status": "filled",
-      "symbol": "SPY",
-      "time": "17:12"
+      "detail": "$25",
+      "status": "submitted",
+      "symbol": "QQQ",
+      "time": "12:48"
     },
     {
-      "detail": "Filled $25 sample BUY at 652.77.",
+      "detail": "$25",
+      "status": "submitted",
+      "symbol": "SPY",
+      "time": "12:48"
+    },
+    {
+      "detail": "$25",
+      "status": "canceled",
+      "symbol": "SPY",
+      "time": "16:58"
+    },
+    {
+      "detail": "$25",
+      "status": "canceled",
+      "symbol": "QQQ",
+      "time": "16:58"
+    },
+    {
+      "detail": "$25",
+      "status": "submitted",
+      "symbol": "QQQ",
+      "time": "17:07"
+    },
+    {
+      "detail": "$25 at 652.77",
       "status": "filled",
       "symbol": "QQQ",
       "time": "17:08"
     },
     {
-      "detail": "Earlier pre-open test order canceled unfilled by broker.",
-      "status": "canceled",
+      "detail": "$7,000",
+      "status": "blocked",
       "symbol": "SPY",
-      "time": "16:58"
+      "time": "17:07"
+    },
+    {
+      "detail": "$7,000",
+      "status": "submitted",
+      "symbol": "SPY",
+      "time": "17:07"
+    },
+    {
+      "detail": "$7,000 at 707.96",
+      "status": "filled",
+      "symbol": "SPY",
+      "time": "17:12"
     }
   ],
   "positions": [
     {
-      "marketValue": 6981.11,
-      "sizePct": 7,
+      "marketValue": 0.0,
+      "sizePct": 0.024903409570546063,
       "status": "holding",
-      "symbol": "SPY",
-      "thesis": "Holding broad-market pullback exposure while trend and liquidity stay aligned.",
-      "unrealizedPnlPct": -0.27
+      "symbol": "QQQ",
+      "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
+      "unrealizedPnlPct": -7.40015803238757
     },
     {
-      "marketValue": 24.9,
-      "sizePct": 0.02,
-      "status": "watching",
-      "symbol": "QQQ",
-      "thesis": "Tiny sample position remains open while the bot watches follow-through.",
-      "unrealizedPnlPct": -0.41
+      "marketValue": 0.0,
+      "sizePct": 6.9824470028881525,
+      "status": "holding",
+      "symbol": "SPY",
+      "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
+      "unrealizedPnlPct": -6.091636569648041
     }
   ],
   "watchlist": [
     {
       "confidence": 0.8,
-      "relativeStrengthPct": 1.42,
+      "relativeStrengthPct": 0.0142,
       "setup": "pullback",
       "symbol": "QQQ"
     },
     {
       "confidence": 0.8,
-      "relativeStrengthPct": 0,
+      "relativeStrengthPct": 0.0,
       "setup": "pullback",
       "symbol": "SPY"
     },
     {
       "confidence": 0.72,
-      "relativeStrengthPct": 0.54,
-      "setup": "watch",
+      "relativeStrengthPct": 0.0562,
+      "setup": "none",
+      "symbol": "NVDA"
+    },
+    {
+      "confidence": 0.72,
+      "relativeStrengthPct": 0.0431,
+      "setup": "none",
       "symbol": "AAPL"
+    },
+    {
+      "confidence": 0.72,
+      "relativeStrengthPct": 0.0179,
+      "setup": "none",
+      "symbol": "IWM"
+    },
+    {
+      "confidence": 0.69,
+      "relativeStrengthPct": -0.0058,
+      "setup": "pullback",
+      "symbol": "MSFT"
     }
   ],
-  "weeklyPnlPct": 0
+  "weeklyPnlPct": -0.0191
 }
