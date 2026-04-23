@@ -22,7 +22,35 @@ export type OrderEvent = {
   detail: string;
 };
 
-export const dashboardData = {
+export type DashboardData = {
+  botStatus: string;
+  mode: string;
+  benchmark: string;
+  marketRegime: string;
+  lastSync: string;
+  equity: number;
+  cash: number;
+  exposurePct: number;
+  weeklyPnlPct: number;
+  openPositions: number;
+  closedOutcomes: number;
+  watchlist: Array<{ symbol: string; setup: string; confidence: number; relativeStrengthPct: number }>;
+  positions: Position[];
+  decisions: DecisionEvent[];
+  orders: OrderEvent[];
+  marketNews: {
+    headline: string;
+    watching: string[];
+    blocking: string[];
+  };
+  learning: {
+    openTrackedOutcomes: number;
+    closedWithPnl: number;
+    note: string;
+  };
+};
+
+export const fallbackDashboardData: DashboardData = {
   botStatus: "Running",
   mode: "Paper",
   benchmark: "SPY",
@@ -111,3 +139,5 @@ export const dashboardData = {
     note: "The bot is still collecting completed trade cycles before changing sizing or blocking setups.",
   },
 };
+
+export const dashboardSnapshotEndpoint = "/api/dashboard";
