@@ -106,7 +106,14 @@
         }
       },
       "status": "ok"
+    },
+    {
+      "id": "f95a397cb17f47ee887d3ca60f9ffbc2",
+      "action": "sync_dashboard",
+      "status": "queued",
+      "requestedAtUtc": "2026-04-24T10:49:00.939Z",
+      "requester": "dashboard-web"
     }
   ],
-  "updatedAtUtc": "2026-04-24T10:42:30.278301Z"
+  "updatedAtUtc": "2026-04-24T10:49:00.939Z"
 }
