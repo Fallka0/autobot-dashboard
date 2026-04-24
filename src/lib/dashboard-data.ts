@@ -28,9 +28,9 @@ export type ThoughtEvent = {
   action: "BUY" | "HOLD" | "TRIM" | "CLOSE" | "SELL";
   headline: string;
   thesis: string;
-  canWork: string[];
-  canFail: string[];
-  invalidations: string[];
+  whyItCanWork: string;
+  whatCanBreakIt: string;
+  whatWouldChangeMind: string;
 };
 
 export type NewsItem = {
@@ -155,9 +155,12 @@ export const fallbackDashboardData: DashboardData = {
       action: "HOLD",
       headline: "Existing long position is already open; duplicate BUY/add is blocked.",
       thesis: "AutoBot still likes the broad-market backdrop, but it does not want to hide in more SPY just because it is familiar.",
-      canWork: ["Trend alignment is still intact.", "Broad index exposure remains liquid and easy to manage."],
-      canFail: ["This can devolve into benchmark hugging.", "A stronger non-benchmark setup could be missed if SPY becomes the lazy default."],
-      invalidations: ["If trend alignment breaks, reduce or close.", "If research worsens materially, reassess the thesis."],
+      whyItCanWork:
+        "AutoBot still thinks this can work because the broader trend is intact, liquidity is easy to manage, and the position already has a valid reason to exist. Right now it is treating SPY as acceptable exposure, not as a place to get lazy.",
+      whatCanBreakIt:
+        "What worries AutoBot most is that SPY can become a comfort trade. If stronger names start showing better relative strength and the bot keeps defaulting to the benchmark, this position stops being useful alpha and starts becoming benchmark hugging.",
+      whatWouldChangeMind:
+        "AutoBot would change its mind if trend support breaks, if the macro backdrop turns materially worse, or if the original pullback thesis stops matching what price is actually doing.",
     },
   ],
   marketNews: {

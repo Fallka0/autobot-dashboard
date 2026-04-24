@@ -95,10 +95,10 @@ export default function ResearchPage() {
                     </span>
                   </div>
                   <p className="mt-3 text-sm leading-6 text-[var(--text-secondary)]">{thought.thesis}</p>
-                  <div className="mt-4 grid gap-4 md:grid-cols-3">
-                    <ThoughtList title="Why It Can Work" items={thought.canWork} />
-                    <ThoughtList title="What Can Break It" items={thought.canFail} />
-                    <ThoughtList title="Invalidations" items={thought.invalidations} />
+                  <div className="mt-4 space-y-4">
+                    <ThoughtSection title="Why AutoBot Still Likes It" body={thought.whyItCanWork} />
+                    <ThoughtSection title="What Makes It Nervous" body={thought.whatCanBreakIt} />
+                    <ThoughtSection title="What Would Change Its Mind" body={thought.whatWouldChangeMind} />
                   </div>
                 </div>
               ))}
@@ -127,19 +127,11 @@ export default function ResearchPage() {
   );
 }
 
-function ThoughtList({ title, items }: { title: string; items: string[] }) {
+function ThoughtSection({ title, body }: { title: string; body: string }) {
   return (
-    <div>
+    <div className="rounded-3xl border border-[color:var(--border-subtle)] bg-[var(--surface-muted)] px-4 py-4">
       <div className="text-sm font-medium text-[var(--text-primary)]">{title}</div>
-      <div className="mt-2 space-y-2">
-        {items.length ? items.map((item) => (
-          <p key={item} className="text-sm leading-6 text-[var(--text-soft)]">
-            {item}
-          </p>
-        )) : (
-          <p className="text-sm leading-6 text-[var(--text-soft)]">No stored note yet.</p>
-        )}
-      </div>
+      <p className="mt-2 text-sm leading-7 text-[var(--text-soft)]">{body || "No stored note yet."}</p>
     </div>
   );
 }
