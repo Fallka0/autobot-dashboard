@@ -95,21 +95,31 @@ async function readQueue(): Promise<{ queue: ControlQueue; sha: string | null }>
 }
 
 async function writeQueue(queue: ControlQueue, sha: string | null, message: string) {
-  const response = await fetch(
-    `${githubApiBase}/repos/${githubOwner}/${githubRepo}/contents/${encodeURIComponent(githubPath)}`,
-    {
-      method: "PUT",
-      headers: githubHeaders(),
-      body: JSON.stringify({
-        message,
-        branch: githubBranch,
-        content: Buffer.from(`${JSON.stringify(queue, null, 2)}\n`, "utf-8").toString("base64"),
-        ...(sha ? { sha } : {}),
-      }),
-    },
-  );
-  if (!response.ok) {
-    throw new Error(`queue write failed: ${response.status}`);
+  let currentQueue = queue;
+  let currentSha = sha;
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    const response = await fetch(
+      `${githubApiBase}/repos/${githubOwner}/${githubRepo}/contents/${encodeURIComponent(githubPath)}`,
+      {
+        method: "PUT",
+        headers: githubHeaders(),
+        body: JSON.stringify({
+          message,
+          branch: githubBranch,
+          content: Buffer.from(`${JSON.stringify(currentQueue, null, 2)}\n`, "utf-8").toString("base64"),
+          ...(currentSha ? { sha: currentSha } : {}),
+        }),
+      },
+    );
+    if (response.ok) {
+      return;
+    }
+    if (response.status !== 409 || attempt === 1) {
+      throw new Error(`queue write failed: ${response.status}`);
+    }
+    const latest = await readQueue();
+    currentQueue = mergeQueues(latest.queue, currentQueue);
+    currentSha = latest.sha;
   }
 }
 
@@ -119,5 +129,25 @@ function githubHeaders() {
     Authorization: `Bearer ${githubWriteToken}`,
     "User-Agent": "autobot-dashboard-control",
     "Content-Type": "application/json",
+  };
+}
+
+function mergeQueues(base: ControlQueue, updated: ControlQueue): ControlQueue {
+  const merged = new Map<string, Record<string, unknown>>();
+  for (const entry of base.commands) {
+    const id = typeof entry.id === "string" ? entry.id : null;
+    if (id) {
+      merged.set(id, { ...entry });
+    }
+  }
+  for (const entry of updated.commands) {
+    const id = typeof entry.id === "string" ? entry.id : null;
+    if (id) {
+      merged.set(id, { ...entry });
+    }
+  }
+  return {
+    commands: Array.from(merged.values()).slice(-50),
+    updatedAtUtc: updated.updatedAtUtc ?? base.updatedAtUtc,
   };
 }
