@@ -98,9 +98,12 @@ export function DashboardShell({
 }
 
 export function HeaderPill({ label }: { label: string }) {
+  const renderedLabel = label.startsWith("Sync: ")
+    ? `Sync: ${formatLocalTimestamp(label.slice("Sync: ".length))}`
+    : label;
   return (
     <div className="rounded-full border border-[color:var(--header-border)] bg-[var(--header-pill)] px-4 py-2 text-sm text-[var(--header-text-muted)]">
-      {label}
+      {renderedLabel}
     </div>
   );
 }
@@ -176,4 +179,18 @@ export function Tag({
 }) {
   const palette = tone === "block" ? "app-chip-danger" : "app-chip-warning";
   return <span className={`rounded-full px-3 py-1 text-xs font-medium ${palette}`}>{children}</span>;
+}
+
+function formatLocalTimestamp(value: string) {
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) {
+    return value;
+  }
+  return new Intl.DateTimeFormat(undefined, {
+    month: "short",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZoneName: "short",
+  }).format(parsed);
 }
