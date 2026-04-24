@@ -3,10 +3,40 @@
     {
       "action": "sync_dashboard",
       "id": "e6b266288c5a4854a6dc1798558dcc02",
+      "processedAtUtc": "2026-04-24T10:20:42.618081Z",
       "requestedAtUtc": "2026-04-24T10:19:47.612345Z",
       "requester": "dashboard",
-      "status": "queued"
+      "result": {
+        "action": "sync_dashboard",
+        "commandId": "e6b266288c5a4854a6dc1798558dcc02",
+        "status": "ok",
+        "task": {
+          "commands": [
+            {
+              "command": [
+                "dashboard",
+                "export",
+                "--publish-github",
+                "--github-owner",
+                "Fallka0",
+                "--github-repo",
+                "autobot-dashboard",
+                "--github-branch",
+                "data",
+                "--gh-bin",
+                "/opt/homebrew/bin/gh"
+              ],
+              "returncode": 0,
+              "status": "ok"
+            }
+          ],
+          "slot_id": "manual:e6b266288c5a4854a6dc1798558dcc02",
+          "status": "ok",
+          "task": "manual:sync_dashboard"
+        }
+      },
+      "status": "ok"
     }
   ],
-  "updatedAtUtc": "2026-04-24T10:19:47.612399Z"
+  "updatedAtUtc": "2026-04-24T10:20:42.618133Z"
 }
