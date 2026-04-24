@@ -31,7 +31,7 @@ export function orderTone(status: string) {
 
 const navItems = [
   { href: "/", label: "Overview" },
-  { href: "/research", label: "Research" },
+  { href: "/research", label: "News & Thoughts" },
   { href: "/operations", label: "Operations" },
 ];
 

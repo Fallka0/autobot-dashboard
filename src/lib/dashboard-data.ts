@@ -22,6 +22,24 @@ export type OrderEvent = {
   detail: string;
 };
 
+export type ThoughtEvent = {
+  time: string;
+  symbol: string;
+  action: "BUY" | "HOLD" | "TRIM" | "CLOSE" | "SELL";
+  headline: string;
+  thesis: string;
+  canWork: string[];
+  canFail: string[];
+  invalidations: string[];
+};
+
+export type NewsItem = {
+  title: string;
+  summary: string;
+  url: string;
+  kind: "headline" | "memory";
+};
+
 export type DashboardData = {
   botStatus: string;
   mode: string;
@@ -38,10 +56,12 @@ export type DashboardData = {
   positions: Position[];
   decisions: DecisionEvent[];
   orders: OrderEvent[];
+  thoughts: ThoughtEvent[];
   marketNews: {
     headline: string;
     watching: string[];
     blocking: string[];
+    items: NewsItem[];
   };
   learning: {
     openTrackedOutcomes: number;
@@ -128,10 +148,30 @@ export const fallbackDashboardData: DashboardData = {
       detail: "Earlier pre-open test order canceled unfilled by broker.",
     },
   ],
+  thoughts: [
+    {
+      time: "17:15",
+      symbol: "SPY",
+      action: "HOLD",
+      headline: "Existing long position is already open; duplicate BUY/add is blocked.",
+      thesis: "AutoBot still likes the broad-market backdrop, but it does not want to hide in more SPY just because it is familiar.",
+      canWork: ["Trend alignment is still intact.", "Broad index exposure remains liquid and easy to manage."],
+      canFail: ["This can devolve into benchmark hugging.", "A stronger non-benchmark setup could be missed if SPY becomes the lazy default."],
+      invalidations: ["If trend alignment breaks, reduce or close.", "If research worsens materially, reassess the thesis."],
+    },
+  ],
   marketNews: {
     headline: "Markets are leaning back toward earnings strength while still watching Fed and inflation risk.",
     watching: ["fed", "inflation", "war"],
     blocking: [],
+    items: [
+      {
+        title: "Markets are leaning back toward earnings strength",
+        summary: "The bot sees a constructive tape, but it is still tracking macro risks that could interrupt follow-through.",
+        url: "",
+        kind: "headline",
+      },
+    ],
   },
   learning: {
     openTrackedOutcomes: 8,
