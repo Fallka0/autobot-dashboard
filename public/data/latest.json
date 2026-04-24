@@ -75,9 +75,9 @@
       "time": "17:29"
     }
   ],
-  "equity": 100016.22,
+  "equity": 100016.6,
   "exposurePct": 7.026182515482053,
-  "lastSync": "2026-04-24T10:37:04.528316Z",
+  "lastSync": "2026-04-24T10:49:47.123426Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -86,6 +86,56 @@
   "marketNews": {
     "blocking": [],
     "headline": "Market Up on Extended Ceasefire; Tesla Due Later: The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations.",
+    "items": [
+      {
+        "kind": "headline",
+        "summary": "The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations.",
+        "title": "Market Up on Extended Ceasefire; Tesla Due Later",
+        "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+      },
+      {
+        "kind": "headline",
+        "summary": "As part of our opportunistic asset-allocation guidance, we recommend that investors take a global approach to overweighting equities relative to bonds. Specifically, we see attractive opportunities in U.S. large- and mid-cap stocks, as well as international de",
+        "title": "Stock Market News Today | Edward Jones",
+        "url": "https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/daily-market-recap"
+      },
+      {
+        "kind": "headline",
+        "summary": "Markets are transitioning from geopolitical risk and focusing more on earnings, says Kevin Green, pointing out the \"oil higher, stocks higher\" trend as a key indicator. Don't discredit headlines aroun... ... HIGHLIGHTS: Stocks: In March, the S&P 500 Index post",
+        "title": "Today's Stock Market News and Breaking Stories",
+        "url": "https://stockanalysis.com/news/"
+      },
+      {
+        "kind": "headline",
+        "summary": "\"It is important to remember that the market was not cheap before the war started, and the recent rally has only brought us back slightly past breakeven for the year,\" he said. \"We expect investors will soon once again turn their attention to more fundamental ",
+        "title": "Stock market news for April 20, 2026",
+        "url": "https://www.cnbc.com/2026/04/19/stock-market-today-live-updates.html"
+      },
+      {
+        "kind": "headline",
+        "summary": "In a much-anticipated hearing before the Senate Banking Committee, the former Fed governor will face questioning over a variety of subjects, from monetary policy to banking regulation to his own complicated personal finances \u00b7 None likely will be more importan",
+        "title": "Stock market news for April 21, 2026",
+        "url": "https://www.cnbc.com/2026/04/20/stock-market-today-live-updates.html"
+      },
+      {
+        "kind": "memory",
+        "summary": "Market Up on Extended Ceasefire; Tesla Due Later: The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations. | Stock Ma",
+        "title": "Persistent fed risk",
+        "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+      },
+      {
+        "kind": "memory",
+        "summary": "Market Up on Extended Ceasefire; Tesla Due Later: The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations. | Stock Ma",
+        "title": "Persistent inflation risk",
+        "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+      },
+      {
+        "kind": "memory",
+        "summary": "Market Up on Extended Ceasefire; Tesla Due Later: The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations. | Stock Ma",
+        "title": "Persistent war risk",
+        "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+      }
+    ],
     "watching": [
       "fed",
       "inflation",
@@ -153,20 +203,190 @@
   ],
   "positions": [
     {
-      "marketValue": 25.199688,
+      "marketValue": 25.189731,
       "sizePct": 0.0252,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.799
+      "unrealizedPnlPct": 0.759
     },
     {
-      "marketValue": 7016.017854,
-      "sizePct": 7.0149,
+      "marketValue": 7015.622351,
+      "sizePct": 7.0145,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.22899999999999998
+      "unrealizedPnlPct": 0.22300000000000003
+    }
+  ],
+  "thoughts": [
+    {
+      "action": "HOLD",
+      "canFail": [
+        "Research risk: Brave search is context only; no direct order signal is inferred.",
+        "Research risk: Market news risk keywords: fed, inflation, war"
+      ],
+      "canWork": [
+        "The decision engine accepted a pullback setup with confidence 0.8.",
+        "Reward/risk was estimated at 1.8 against the configured floor.",
+        "Trend alignment passed, reducing the chance of fighting the primary move."
+      ],
+      "headline": "spread is not reasonable",
+      "invalidations": [
+        "Stop loss or drawdown reaches 4.0%.",
+        "Trend alignment, 50dma, or 200dma condition breaks.",
+        "Research turns materially negative or contradicts the setup."
+      ],
+      "symbol": "SPY",
+      "thesis": "Rule violation or insufficient setup quality",
+      "time": "20:38"
+    },
+    {
+      "action": "HOLD",
+      "canFail": [
+        "Research risk: Brave search is context only; no direct order signal is inferred.",
+        "Research risk: Market news risk keywords: fed, inflation, war"
+      ],
+      "canWork": [
+        "The decision engine accepted a pullback setup with confidence 0.8.",
+        "Reward/risk was estimated at 1.8 against the configured floor.",
+        "Trend alignment passed, reducing the chance of fighting the primary move."
+      ],
+      "headline": "existing long position already open; new add is blocked",
+      "invalidations": [
+        "Stop loss or drawdown reaches 4.0%.",
+        "Trend alignment, 50dma, or 200dma condition breaks.",
+        "Research turns materially negative or contradicts the setup."
+      ],
+      "symbol": "QQQ",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "20:38"
+    },
+    {
+      "action": "HOLD",
+      "canFail": [
+        "Research risk: Brave search is context only; no direct order signal is inferred.",
+        "Research risk: Market news risk keywords: fed, inflation, war"
+      ],
+      "canWork": [
+        "The decision engine accepted a pullback setup with confidence 0.8.",
+        "Reward/risk was estimated at 1.8 against the configured floor.",
+        "Trend alignment passed, reducing the chance of fighting the primary move."
+      ],
+      "headline": "existing long position already open; new add is blocked",
+      "invalidations": [
+        "Stop loss or drawdown reaches 4.0%.",
+        "Trend alignment, 50dma, or 200dma condition breaks.",
+        "Research turns materially negative or contradicts the setup."
+      ],
+      "symbol": "SPY",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "19:14"
+    },
+    {
+      "action": "HOLD",
+      "canFail": [
+        "Research risk: Brave search is context only; no direct order signal is inferred.",
+        "Research risk: Market news risk keywords: fed, inflation, war"
+      ],
+      "canWork": [
+        "The decision engine accepted a pullback setup with confidence 0.8.",
+        "Reward/risk was estimated at 1.8 against the configured floor.",
+        "Trend alignment passed, reducing the chance of fighting the primary move."
+      ],
+      "headline": "existing long position already open; new add is blocked",
+      "invalidations": [
+        "Stop loss or drawdown reaches 4.0%.",
+        "Trend alignment, 50dma, or 200dma condition breaks.",
+        "Research turns materially negative or contradicts the setup."
+      ],
+      "symbol": "QQQ",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "19:14"
+    },
+    {
+      "action": "HOLD",
+      "canFail": [
+        "Research risk: Brave search is context only; no direct order signal is inferred.",
+        "Research risk: Market news risk keywords: fed, inflation, war"
+      ],
+      "canWork": [
+        "The decision engine accepted a pullback setup with confidence 0.8.",
+        "Reward/risk was estimated at 1.8 against the configured floor.",
+        "Trend alignment passed, reducing the chance of fighting the primary move."
+      ],
+      "headline": "existing long position already open; new add is blocked",
+      "invalidations": [
+        "Stop loss or drawdown reaches 4.0%.",
+        "Trend alignment, 50dma, or 200dma condition breaks.",
+        "Research turns materially negative or contradicts the setup."
+      ],
+      "symbol": "SPY",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "18:46"
+    },
+    {
+      "action": "HOLD",
+      "canFail": [
+        "Research risk: Brave search is context only; no direct order signal is inferred.",
+        "Research risk: Market news risk keywords: fed, inflation, war"
+      ],
+      "canWork": [
+        "The decision engine accepted a pullback setup with confidence 0.8.",
+        "Reward/risk was estimated at 1.8 against the configured floor.",
+        "Trend alignment passed, reducing the chance of fighting the primary move."
+      ],
+      "headline": "existing long position already open; new add is blocked",
+      "invalidations": [
+        "Stop loss or drawdown reaches 4.0%.",
+        "Trend alignment, 50dma, or 200dma condition breaks.",
+        "Research turns materially negative or contradicts the setup."
+      ],
+      "symbol": "QQQ",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "18:46"
+    },
+    {
+      "action": "HOLD",
+      "canFail": [
+        "Research risk: Brave search is context only; no direct order signal is inferred.",
+        "Research risk: Market news risk keywords: fed, inflation, war"
+      ],
+      "canWork": [
+        "The decision engine accepted a pullback setup with confidence 0.8.",
+        "Reward/risk was estimated at 1.8 against the configured floor.",
+        "Trend alignment passed, reducing the chance of fighting the primary move."
+      ],
+      "headline": "existing long position already open; new add is blocked",
+      "invalidations": [
+        "Stop loss or drawdown reaches 4.0%.",
+        "Trend alignment, 50dma, or 200dma condition breaks.",
+        "Research turns materially negative or contradicts the setup."
+      ],
+      "symbol": "SPY",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "18:03"
+    },
+    {
+      "action": "HOLD",
+      "canFail": [
+        "Research risk: Brave search is context only; no direct order signal is inferred.",
+        "Research risk: Market news risk keywords: fed, inflation, war"
+      ],
+      "canWork": [
+        "The decision engine accepted a pullback setup with confidence 0.8.",
+        "Reward/risk was estimated at 1.8 against the configured floor.",
+        "Trend alignment passed, reducing the chance of fighting the primary move."
+      ],
+      "headline": "existing long position already open; new add is blocked",
+      "invalidations": [
+        "Stop loss or drawdown reaches 4.0%.",
+        "Trend alignment, 50dma, or 200dma condition breaks.",
+        "Research turns materially negative or contradicts the setup."
+      ],
+      "symbol": "QQQ",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "18:03"
     }
   ],
   "watchlist": [
@@ -174,37 +394,43 @@
       "confidence": 0.8,
       "relativeStrengthPct": 0.0142,
       "setup": "pullback",
-      "symbol": "QQQ"
-    },
-    {
-      "confidence": 0.76,
-      "relativeStrengthPct": 0.0,
-      "setup": "pullback",
-      "symbol": "SPY"
+      "symbol": "QQQ",
+      "watchlistScore": 90.42
     },
     {
       "confidence": 0.72,
       "relativeStrengthPct": 0.0562,
       "setup": "none",
-      "symbol": "NVDA"
+      "symbol": "NVDA",
+      "watchlistScore": 86.62
     },
     {
       "confidence": 0.72,
       "relativeStrengthPct": 0.0431,
       "setup": "none",
-      "symbol": "AAPL"
+      "symbol": "AAPL",
+      "watchlistScore": 85.31
     },
     {
       "confidence": 0.72,
       "relativeStrengthPct": 0.0179,
       "setup": "none",
-      "symbol": "IWM"
+      "symbol": "IWM",
+      "watchlistScore": 82.79
     },
     {
       "confidence": 0.69,
       "relativeStrengthPct": -0.0058,
       "setup": "pullback",
-      "symbol": "MSFT"
+      "symbol": "MSFT",
+      "watchlistScore": 77.42
+    },
+    {
+      "confidence": 0.65,
+      "relativeStrengthPct": -0.0329,
+      "setup": "none",
+      "symbol": "GOOGL",
+      "watchlistScore": 70.71
     }
   ],
   "weeklyPnlPct": 0.0013
