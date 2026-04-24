@@ -75,9 +75,9 @@
       "time": "17:29"
     }
   ],
-  "equity": 100016.4,
+  "equity": 100016.21,
   "exposurePct": 7.026182515482053,
-  "lastSync": "2026-04-24T10:55:04.267536Z",
+  "lastSync": "2026-04-24T10:56:38.599601Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -203,190 +203,102 @@
   ],
   "positions": [
     {
-      "marketValue": 25.18322,
+      "marketValue": 25.187816,
       "sizePct": 0.0252,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.733
+      "unrealizedPnlPct": 0.751
     },
     {
-      "marketValue": 7016.215605,
-      "sizePct": 7.0151,
+      "marketValue": 7016.017854,
+      "sizePct": 7.0149,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.232
+      "unrealizedPnlPct": 0.22899999999999998
     }
   ],
   "thoughts": [
     {
       "action": "HOLD",
-      "canFail": [
-        "Research risk: Brave search is context only; no direct order signal is inferred.",
-        "Research risk: Market news risk keywords: fed, inflation, war"
-      ],
-      "canWork": [
-        "The decision engine accepted a pullback setup with confidence 0.8.",
-        "Reward/risk was estimated at 1.8 against the configured floor.",
-        "Trend alignment passed, reducing the chance of fighting the primary move."
-      ],
       "headline": "spread is not reasonable",
-      "invalidations": [
-        "Stop loss or drawdown reaches 4.0%.",
-        "Trend alignment, 50dma, or 200dma condition breaks.",
-        "Research turns materially negative or contradicts the setup."
-      ],
       "symbol": "SPY",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:38"
+      "time": "20:38",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.76, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "canFail": [
-        "Research risk: Brave search is context only; no direct order signal is inferred.",
-        "Research risk: Market news risk keywords: fed, inflation, war"
-      ],
-      "canWork": [
-        "The decision engine accepted a pullback setup with confidence 0.8.",
-        "Reward/risk was estimated at 1.8 against the configured floor.",
-        "Trend alignment passed, reducing the chance of fighting the primary move."
-      ],
       "headline": "existing long position already open; new add is blocked",
-      "invalidations": [
-        "Stop loss or drawdown reaches 4.0%.",
-        "Trend alignment, 50dma, or 200dma condition breaks.",
-        "Research turns materially negative or contradicts the setup."
-      ],
       "symbol": "QQQ",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "20:38"
+      "time": "20:38",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "canFail": [
-        "Research risk: Brave search is context only; no direct order signal is inferred.",
-        "Research risk: Market news risk keywords: fed, inflation, war"
-      ],
-      "canWork": [
-        "The decision engine accepted a pullback setup with confidence 0.8.",
-        "Reward/risk was estimated at 1.8 against the configured floor.",
-        "Trend alignment passed, reducing the chance of fighting the primary move."
-      ],
       "headline": "existing long position already open; new add is blocked",
-      "invalidations": [
-        "Stop loss or drawdown reaches 4.0%.",
-        "Trend alignment, 50dma, or 200dma condition breaks.",
-        "Research turns materially negative or contradicts the setup."
-      ],
       "symbol": "SPY",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "19:14"
+      "time": "19:14",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "canFail": [
-        "Research risk: Brave search is context only; no direct order signal is inferred.",
-        "Research risk: Market news risk keywords: fed, inflation, war"
-      ],
-      "canWork": [
-        "The decision engine accepted a pullback setup with confidence 0.8.",
-        "Reward/risk was estimated at 1.8 against the configured floor.",
-        "Trend alignment passed, reducing the chance of fighting the primary move."
-      ],
       "headline": "existing long position already open; new add is blocked",
-      "invalidations": [
-        "Stop loss or drawdown reaches 4.0%.",
-        "Trend alignment, 50dma, or 200dma condition breaks.",
-        "Research turns materially negative or contradicts the setup."
-      ],
       "symbol": "QQQ",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "19:14"
+      "time": "19:14",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "canFail": [
-        "Research risk: Brave search is context only; no direct order signal is inferred.",
-        "Research risk: Market news risk keywords: fed, inflation, war"
-      ],
-      "canWork": [
-        "The decision engine accepted a pullback setup with confidence 0.8.",
-        "Reward/risk was estimated at 1.8 against the configured floor.",
-        "Trend alignment passed, reducing the chance of fighting the primary move."
-      ],
       "headline": "existing long position already open; new add is blocked",
-      "invalidations": [
-        "Stop loss or drawdown reaches 4.0%.",
-        "Trend alignment, 50dma, or 200dma condition breaks.",
-        "Research turns materially negative or contradicts the setup."
-      ],
       "symbol": "SPY",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "18:46"
+      "time": "18:46",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "canFail": [
-        "Research risk: Brave search is context only; no direct order signal is inferred.",
-        "Research risk: Market news risk keywords: fed, inflation, war"
-      ],
-      "canWork": [
-        "The decision engine accepted a pullback setup with confidence 0.8.",
-        "Reward/risk was estimated at 1.8 against the configured floor.",
-        "Trend alignment passed, reducing the chance of fighting the primary move."
-      ],
       "headline": "existing long position already open; new add is blocked",
-      "invalidations": [
-        "Stop loss or drawdown reaches 4.0%.",
-        "Trend alignment, 50dma, or 200dma condition breaks.",
-        "Research turns materially negative or contradicts the setup."
-      ],
       "symbol": "QQQ",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "18:46"
+      "time": "18:46",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "canFail": [
-        "Research risk: Brave search is context only; no direct order signal is inferred.",
-        "Research risk: Market news risk keywords: fed, inflation, war"
-      ],
-      "canWork": [
-        "The decision engine accepted a pullback setup with confidence 0.8.",
-        "Reward/risk was estimated at 1.8 against the configured floor.",
-        "Trend alignment passed, reducing the chance of fighting the primary move."
-      ],
       "headline": "existing long position already open; new add is blocked",
-      "invalidations": [
-        "Stop loss or drawdown reaches 4.0%.",
-        "Trend alignment, 50dma, or 200dma condition breaks.",
-        "Research turns materially negative or contradicts the setup."
-      ],
       "symbol": "SPY",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "18:03"
+      "time": "18:03",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "canFail": [
-        "Research risk: Brave search is context only; no direct order signal is inferred.",
-        "Research risk: Market news risk keywords: fed, inflation, war"
-      ],
-      "canWork": [
-        "The decision engine accepted a pullback setup with confidence 0.8.",
-        "Reward/risk was estimated at 1.8 against the configured floor.",
-        "Trend alignment passed, reducing the chance of fighting the primary move."
-      ],
       "headline": "existing long position already open; new add is blocked",
-      "invalidations": [
-        "Stop loss or drawdown reaches 4.0%.",
-        "Trend alignment, 50dma, or 200dma condition breaks.",
-        "Research turns materially negative or contradicts the setup."
-      ],
       "symbol": "QQQ",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "18:03"
+      "time": "18:03",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     }
   ],
   "watchlist": [
