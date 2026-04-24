@@ -9,6 +9,20 @@
       "confidence": 0.8,
       "summary": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
       "symbol": "SPY",
+      "time": "18:55"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "time": "18:55"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
+      "symbol": "SPY",
       "time": "18:50"
     },
     {
@@ -59,25 +73,11 @@
       "summary": "existing long position already open; new add is blocked",
       "symbol": "QQQ",
       "time": "18:35"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
-      "symbol": "SPY",
-      "time": "18:30"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "existing long position already open; new add is blocked",
-      "symbol": "QQQ",
-      "time": "18:30"
     }
   ],
-  "equity": 100101.71,
-  "exposurePct": 14.089945548090913,
-  "lastSync": "2026-04-24T18:50:57.615400Z",
+  "equity": 100104.92,
+  "exposurePct": 14.091701483549752,
+  "lastSync": "2026-04-24T18:55:25.284702Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -209,20 +209,20 @@
   ],
   "positions": [
     {
-      "marketValue": 7050.408602,
-      "sizePct": 7.0432,
+      "marketValue": 7052.162951,
+      "sizePct": 7.0448,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.696
+      "unrealizedPnlPct": 0.721
     },
     {
-      "marketValue": 7052.700717,
-      "sizePct": 7.0455,
+      "marketValue": 7053.689474,
+      "sizePct": 7.0463,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.753
+      "unrealizedPnlPct": 0.767
     }
   ],
   "thoughts": [
@@ -231,6 +231,26 @@
       "headline": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
       "symbol": "SPY",
       "thesis": "Rule violation or insufficient setup quality",
+      "time": "18:55",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+    },
+    {
+      "action": "HOLD",
+      "headline": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "18:55",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+    },
+    {
+      "action": "HOLD",
+      "headline": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
+      "symbol": "SPY",
+      "thesis": "Rule violation or insufficient setup quality",
       "time": "18:50",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
@@ -282,26 +302,6 @@
       "symbol": "QQQ",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
       "time": "18:40",
-      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
-      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
-      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
-    },
-    {
-      "action": "HOLD",
-      "headline": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
-      "symbol": "SPY",
-      "thesis": "Rule violation or insufficient setup quality",
-      "time": "18:35",
-      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
-      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
-      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
-    },
-    {
-      "action": "HOLD",
-      "headline": "existing long position already open; new add is blocked",
-      "symbol": "QQQ",
-      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "18:35",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -351,5 +351,5 @@
       "watchlistScore": 74.0
     }
   ],
-  "weeklyPnlPct": 0.103
+  "weeklyPnlPct": 0.1052
 }
