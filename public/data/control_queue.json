@@ -73,7 +73,14 @@
         }
       },
       "status": "ok"
+    },
+    {
+      "id": "2669dd6a31cd4d579ee8da2a60ad4f0e",
+      "action": "run_position_watch",
+      "status": "queued",
+      "requestedAtUtc": "2026-04-24T10:42:07.960Z",
+      "requester": "dashboard-web"
     }
   ],
-  "updatedAtUtc": "2026-04-24T10:37:06.326293Z"
+  "updatedAtUtc": "2026-04-24T10:42:07.960Z"
 }
