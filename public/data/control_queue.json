@@ -182,26 +182,112 @@
       "status": "ok"
     },
     {
-      "id": "d41b5dd06f0e4d50ab5e3d1c2de9e33c",
       "action": "run_position_watch",
-      "status": "queued",
+      "id": "d41b5dd06f0e4d50ab5e3d1c2de9e33c",
+      "processedAtUtc": "2026-04-24T11:13:10.369040Z",
       "requestedAtUtc": "2026-04-24T11:01:41.890Z",
-      "requester": "dashboard-web"
+      "requester": "dashboard-web",
+      "result": {
+        "action": "run_position_watch",
+        "commandId": "d41b5dd06f0e4d50ab5e3d1c2de9e33c",
+        "status": "ok",
+        "task": {
+          "commands": [
+            {
+              "command": [
+                "routine",
+                "--routine",
+                "position-watch",
+                "--notify-telegram",
+                "--execute-paper-orders",
+                "--max-order-balance-pct",
+                "7"
+              ],
+              "returncode": 0,
+              "status": "ok"
+            }
+          ],
+          "slot_id": "manual:d41b5dd06f0e4d50ab5e3d1c2de9e33c",
+          "status": "ok",
+          "task": "manual:run_position_watch"
+        }
+      },
+      "status": "ok"
     },
     {
+      "action": "sync_dashboard",
       "id": "664ead4146c8428294072a13d7837d7c",
-      "action": "sync_dashboard",
-      "status": "queued",
+      "processedAtUtc": "2026-04-24T11:13:14.441676Z",
       "requestedAtUtc": "2026-04-24T11:04:28.526Z",
-      "requester": "dashboard-web"
+      "requester": "dashboard-web",
+      "result": {
+        "action": "sync_dashboard",
+        "commandId": "664ead4146c8428294072a13d7837d7c",
+        "status": "ok",
+        "task": {
+          "commands": [
+            {
+              "command": [
+                "dashboard",
+                "export",
+                "--publish-github",
+                "--github-owner",
+                "Fallka0",
+                "--github-repo",
+                "autobot-dashboard",
+                "--github-branch",
+                "data",
+                "--gh-bin",
+                "/opt/homebrew/bin/gh"
+              ],
+              "returncode": 0,
+              "status": "ok"
+            }
+          ],
+          "slot_id": "manual:664ead4146c8428294072a13d7837d7c",
+          "status": "ok",
+          "task": "manual:sync_dashboard"
+        }
+      },
+      "status": "ok"
     },
     {
-      "id": "d36c1bd8fdca4458aad2e86bc83aceda",
       "action": "sync_dashboard",
-      "status": "queued",
+      "id": "d36c1bd8fdca4458aad2e86bc83aceda",
+      "processedAtUtc": "2026-04-24T11:13:18.420046Z",
       "requestedAtUtc": "2026-04-24T11:08:21.411Z",
-      "requester": "dashboard-web"
+      "requester": "dashboard-web",
+      "result": {
+        "action": "sync_dashboard",
+        "commandId": "d36c1bd8fdca4458aad2e86bc83aceda",
+        "status": "ok",
+        "task": {
+          "commands": [
+            {
+              "command": [
+                "dashboard",
+                "export",
+                "--publish-github",
+                "--github-owner",
+                "Fallka0",
+                "--github-repo",
+                "autobot-dashboard",
+                "--github-branch",
+                "data",
+                "--gh-bin",
+                "/opt/homebrew/bin/gh"
+              ],
+              "returncode": 0,
+              "status": "ok"
+            }
+          ],
+          "slot_id": "manual:d36c1bd8fdca4458aad2e86bc83aceda",
+          "status": "ok",
+          "task": "manual:sync_dashboard"
+        }
+      },
+      "status": "ok"
     }
   ],
-  "updatedAtUtc": "2026-04-24T11:08:21.411Z"
+  "updatedAtUtc": "2026-04-24T11:13:18.420111Z"
 }
