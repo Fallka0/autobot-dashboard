@@ -324,7 +324,14 @@
         }
       },
       "status": "ok"
+    },
+    {
+      "id": "33d6a6f1eabf47818293e60b786d9450",
+      "action": "sync_dashboard",
+      "status": "queued",
+      "requestedAtUtc": "2026-04-24T11:28:21.442Z",
+      "requester": "dashboard-web"
     }
   ],
-  "updatedAtUtc": "2026-04-24T11:26:31.949705Z"
+  "updatedAtUtc": "2026-04-24T11:28:21.442Z"
 }
