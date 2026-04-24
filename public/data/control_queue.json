@@ -1,0 +1,12 @@
+{
+  "commands": [
+    {
+      "action": "sync_dashboard",
+      "id": "e6b266288c5a4854a6dc1798558dcc02",
+      "requestedAtUtc": "2026-04-24T10:19:47.612345Z",
+      "requester": "dashboard",
+      "status": "queued"
+    }
+  ],
+  "updatedAtUtc": "2026-04-24T10:19:47.612399Z"
+}
