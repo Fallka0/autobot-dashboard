@@ -8,6 +8,19 @@ import {
   type DashboardData,
 } from "@/lib/dashboard-data";
 
+const controlActions = [
+  { action: "start_bot", label: "Start Bot" },
+  { action: "stop_bot", label: "Stop Bot" },
+  { action: "run_premarket", label: "Pre-market" },
+  { action: "run_open", label: "Open" },
+  { action: "run_midday", label: "Midday" },
+  { action: "run_position_watch", label: "Watch" },
+  { action: "run_eod", label: "EOD" },
+  { action: "sync_dashboard", label: "Sync" },
+] as const;
+
+type ControlAction = (typeof controlActions)[number]["action"];
+
 function currency(value: number) {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -36,6 +49,11 @@ function orderTone(status: string) {
 
 export default function Home() {
   const [data, setData] = useState<DashboardData>(fallbackDashboardData);
+  const [controlToken, setControlToken] = useState(
+    () => (typeof window === "undefined" ? "" : window.localStorage.getItem("autobot-control-token") ?? ""),
+  );
+  const [controlBusy, setControlBusy] = useState<ControlAction | null>(null);
+  const [controlMessage, setControlMessage] = useState("No manual command queued yet.");
 
   useEffect(() => {
     let cancelled = false;
@@ -62,6 +80,41 @@ export default function Home() {
       window.clearInterval(intervalId);
     };
   }, []);
+
+  const submitControl = async (action: ControlAction) => {
+    setControlBusy(action);
+    setControlMessage("Queueing command...");
+    try {
+      const response = await fetch("/api/control", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-autobot-control-token": controlToken,
+        },
+        body: JSON.stringify({ action }),
+      });
+      const payload = (await response.json()) as { status?: string; command?: { requestedAtUtc?: string } };
+      if (!response.ok) {
+        throw new Error(payload.status ?? `HTTP ${response.status}`);
+      }
+      setControlMessage(
+        `${labelForAction(action)} queued at ${payload.command?.requestedAtUtc ?? "now"}. The laptop will pick it up on the next minute tick.`,
+      );
+    } catch (error) {
+      setControlMessage(
+        `Could not queue ${labelForAction(action)}. ${
+          error instanceof Error ? error.message : "Unknown error"
+        }`,
+      );
+    } finally {
+      setControlBusy(null);
+    }
+  };
+
+  const saveControlToken = (value: string) => {
+    setControlToken(value);
+    window.localStorage.setItem("autobot-control-token", value);
+  };
 
   return (
     <main className="app-shell">
@@ -316,6 +369,35 @@ export default function Home() {
                 </p>
               </div>
             </Panel>
+
+            <Panel title="Manual Controls" meta="Queue commands for the laptop bot">
+              <div className="space-y-4">
+                <label className="block text-sm text-[var(--text-soft)]">
+                  Control token
+                  <input
+                    type="password"
+                    value={controlToken}
+                    onChange={(event) => saveControlToken(event.target.value)}
+                    className="mt-2 w-full rounded-2xl border border-[color:var(--border-subtle)] bg-[var(--surface-muted)] px-4 py-3 text-sm text-[var(--text-primary)] outline-none"
+                    placeholder="Enter dashboard control token"
+                  />
+                </label>
+                <div className="grid grid-cols-2 gap-3">
+                  {controlActions.map((item) => (
+                    <button
+                      key={item.action}
+                      type="button"
+                      onClick={() => void submitControl(item.action)}
+                      disabled={!controlToken || controlBusy !== null}
+                      className="app-card rounded-2xl px-4 py-3 text-sm font-medium text-[var(--text-primary)] transition disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      {controlBusy === item.action ? "Queueing..." : item.label}
+                    </button>
+                  ))}
+                </div>
+                <p className="text-sm leading-6 text-[var(--text-soft)]">{controlMessage}</p>
+              </div>
+            </Panel>
           </div>
         </section>
       </div>
@@ -416,4 +498,8 @@ function Tag({
       {children}
     </span>
   );
+}
+
+function labelForAction(action: ControlAction) {
+  return controlActions.find((item) => item.action === action)?.label ?? action;
 }
