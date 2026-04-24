@@ -180,7 +180,14 @@
         }
       },
       "status": "ok"
+    },
+    {
+      "id": "d41b5dd06f0e4d50ab5e3d1c2de9e33c",
+      "action": "run_position_watch",
+      "status": "queued",
+      "requestedAtUtc": "2026-04-24T11:01:41.890Z",
+      "requester": "dashboard-web"
     }
   ],
-  "updatedAtUtc": "2026-04-24T10:55:06.332555Z"
+  "updatedAtUtc": "2026-04-24T11:01:41.890Z"
 }
