@@ -10,6 +10,7 @@ type ChatTurn = {
   text: string;
   title?: string;
   time?: string;
+  mode?: "ai" | "fallback";
 };
 
 const starterQuestions = [
@@ -37,6 +38,12 @@ export default function AskPage() {
     if (!trimmed || busy) {
       return;
     }
+    const history = turns
+      .filter((turn) => turn.role === "user" || turn.role === "bot")
+      .map((turn) => ({
+        role: turn.role === "bot" ? "assistant" : "user",
+        text: turn.text,
+      }));
     setBusy(true);
     setTurns((current) => [...current, { role: "user", text: trimmed }]);
     setQuestion("");
@@ -46,9 +53,9 @@ export default function AskPage() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ question: trimmed }),
+        body: JSON.stringify({ question: trimmed, messages: history }),
       });
-      const payload = (await response.json()) as { answer?: string; title?: string; answeredAt?: string };
+      const payload = (await response.json()) as { answer?: string; title?: string; answeredAt?: string; mode?: "ai" | "fallback" };
       setTurns((current) => [
         ...current,
         {
@@ -56,6 +63,7 @@ export default function AskPage() {
           title: payload.title ?? "AutoBot answer",
           text: payload.answer ?? "I could not build a useful answer from the current snapshot.",
           time: payload.answeredAt,
+          mode: payload.mode,
         },
       ]);
     } catch {
@@ -65,6 +73,7 @@ export default function AskPage() {
           role: "bot",
           title: "AutoBot answer",
           text: "I could not reach the dashboard snapshot just now. Try again in a moment.",
+          mode: "fallback",
         },
       ]);
     } finally {
@@ -88,12 +97,17 @@ export default function AskPage() {
                   className={`rounded-3xl px-4 py-4 ${turn.role === "bot" ? "app-card" : "border border-[color:var(--border-subtle)] bg-[var(--surface-muted)]"}`}
                 >
                   <div className="flex items-center justify-between gap-3">
-                    <div className="text-sm font-semibold text-[var(--text-primary)]">
-                      {turn.role === "bot" ? turn.title ?? "AutoBot" : "You"}
+                    <div className="flex items-center gap-2">
+                      <div className="text-sm font-semibold text-[var(--text-primary)]">
+                        {turn.role === "bot" ? turn.title ?? "AutoBot" : "You"}
+                      </div>
+                      {turn.role === "bot" && turn.mode ? (
+                        <span className="rounded-full border border-[color:var(--border-subtle)] bg-[var(--surface-muted)] px-2 py-1 text-[11px] uppercase tracking-[0.16em] text-[var(--text-muted)]">
+                          {turn.mode === "ai" ? "AI" : "Fallback"}
+                        </span>
+                      ) : null}
                     </div>
-                    {turn.time ? (
-                      <div className="text-xs text-[var(--text-muted)]">{formatLocalTimestamp(turn.time)}</div>
-                    ) : null}
+                    {turn.time ? <div className="text-xs text-[var(--text-muted)]">{formatLocalTimestamp(turn.time)}</div> : null}
                   </div>
                   <p className="mt-2 text-sm leading-7 text-[var(--text-secondary)]">{turn.text}</p>
                 </div>

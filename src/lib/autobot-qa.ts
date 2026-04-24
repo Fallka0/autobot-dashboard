@@ -13,6 +13,7 @@ export function answerAutobotQuestion(question: string, data: DashboardData) {
       answer:
         "Ask me about a symbol, a position, or the market context. Good examples are: why not buy more QQQ, what does AutoBot think about SPY, or what risks is the bot watching right now?",
       title: "Ask AutoBot",
+      mode: "fallback" as const,
     };
   }
 
@@ -20,6 +21,7 @@ export function answerAutobotQuestion(question: string, data: DashboardData) {
     return {
       title: `Why not more ${symbol}?`,
       answer: explainWhyNoAdd(symbol, latestDecision, position, thought),
+      mode: "fallback" as const,
     };
   }
 
@@ -27,6 +29,7 @@ export function answerAutobotQuestion(question: string, data: DashboardData) {
     return {
       title: `Current view on ${symbol}`,
       answer: explainSymbolView(symbol, latestDecision, position, thought),
+      mode: "fallback" as const,
     };
   }
 
@@ -34,6 +37,7 @@ export function answerAutobotQuestion(question: string, data: DashboardData) {
     return {
       title: "Market risks",
       answer: explainMarketContext(data),
+      mode: "fallback" as const,
     };
   }
 
@@ -41,6 +45,7 @@ export function answerAutobotQuestion(question: string, data: DashboardData) {
     return {
       title: "Portfolio view",
       answer: explainPortfolio(data),
+      mode: "fallback" as const,
     };
   }
 
@@ -48,6 +53,7 @@ export function answerAutobotQuestion(question: string, data: DashboardData) {
     return {
       title: "Learning status",
       answer: `AutoBot is still early in its learning cycle. It currently has ${data.learning.openTrackedOutcomes} open tracked outcomes and ${data.learning.closedWithPnl} closed outcomes with realized PnL, so it is mostly collecting evidence rather than making aggressive rule changes. ${data.learning.note}`,
+      mode: "fallback" as const,
     };
   }
 
@@ -55,12 +61,34 @@ export function answerAutobotQuestion(question: string, data: DashboardData) {
     return {
       title: `${symbol} overview`,
       answer: explainSymbolView(symbol, latestDecision, position, thought),
+      mode: "fallback" as const,
     };
   }
 
   return {
     title: "AutoBot answer",
     answer: explainGeneralState(data),
+    mode: "fallback" as const,
+  };
+}
+
+export function autobotAiContext(data: DashboardData) {
+  return {
+    botStatus: data.botStatus,
+    mode: data.mode,
+    benchmark: data.benchmark,
+    marketRegime: data.marketRegime,
+    lastSync: data.lastSync,
+    equity: data.equity,
+    cash: data.cash,
+    exposurePct: data.exposurePct,
+    positions: data.positions,
+    latestDecisions: data.decisions.slice(0, 10),
+    latestThoughts: data.thoughts.slice(0, 6),
+    recentOrders: data.orders.slice(0, 10),
+    watchlist: data.watchlist.slice(0, 6),
+    marketNews: data.marketNews,
+    learning: data.learning,
   };
 }
 
