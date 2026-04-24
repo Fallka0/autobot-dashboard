@@ -6,14 +6,14 @@ import { DashboardShell, MetricRow, Panel, formatLocalTimestamp, orderTone } fro
 import { useDashboardData } from "@/lib/use-dashboard-data";
 
 const controlActions = [
-  { action: "start_bot", label: "Start Bot" },
-  { action: "stop_bot", label: "Stop Bot" },
-  { action: "run_premarket", label: "Pre-market" },
-  { action: "run_open", label: "Open" },
-  { action: "run_midday", label: "Midday" },
-  { action: "run_position_watch", label: "Watch" },
-  { action: "run_eod", label: "EOD" },
-  { action: "sync_dashboard", label: "Sync" },
+  { action: "start_bot", label: "Start Bot", description: "Resume automated checks and scheduled routines on the laptop runtime." },
+  { action: "stop_bot", label: "Stop Bot", description: "Pause automated execution while keeping the dashboard and history intact." },
+  { action: "run_premarket", label: "Pre-market", description: "Refresh finance news, update macro context, and rebuild the watchlist before the session." },
+  { action: "run_open", label: "Open", description: "Run the market-open decision pass and queue any paper trades that qualify." },
+  { action: "run_midday", label: "Midday", description: "Reassess the universe around midday and look for trims, closes, or fresh entries." },
+  { action: "run_position_watch", label: "Watch", description: "Check only current positions, manage risk, and react without scanning the full universe." },
+  { action: "run_eod", label: "EOD", description: "Do the end-of-day risk cleanup, update benchmark state, and prepare the daily summary." },
+  { action: "sync_dashboard", label: "Sync", description: "Publish the newest bot snapshot so the live dashboard reflects the latest state." },
 ] as const;
 
 type ControlAction = (typeof controlActions)[number]["action"];
@@ -77,16 +77,24 @@ export default function OperationsPage() {
                 placeholder="Enter dashboard control token"
               />
             </label>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid gap-3 sm:grid-cols-2">
               {controlActions.map((item) => (
                 <button
                   key={item.action}
                   type="button"
                   onClick={() => void submitControl(item.action)}
                   disabled={!controlToken || controlBusy !== null}
-                  className="app-card rounded-2xl px-4 py-3 text-sm font-medium text-[var(--text-primary)] transition disabled:cursor-not-allowed disabled:opacity-50"
+                  className="app-card rounded-3xl px-4 py-4 text-left transition disabled:cursor-not-allowed disabled:opacity-50"
                 >
-                  {controlBusy === item.action ? "Queueing..." : item.label}
+                  <div className="flex items-start justify-between gap-3">
+                    <span className="text-sm font-semibold text-[var(--text-primary)]">
+                      {controlBusy === item.action ? "Queueing..." : item.label}
+                    </span>
+                    <span className="rounded-full border border-[color:var(--border-subtle)] bg-[var(--surface-muted)] px-2 py-1 text-[11px] uppercase tracking-[0.18em] text-[var(--text-muted)]">
+                      Manual
+                    </span>
+                  </div>
+                  <p className="mt-3 text-sm leading-6 text-[var(--text-soft)]">{item.description}</p>
                 </button>
               ))}
             </div>
