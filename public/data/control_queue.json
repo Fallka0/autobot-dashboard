@@ -194,7 +194,14 @@
       "status": "queued",
       "requestedAtUtc": "2026-04-24T11:04:28.526Z",
       "requester": "dashboard-web"
+    },
+    {
+      "id": "d36c1bd8fdca4458aad2e86bc83aceda",
+      "action": "sync_dashboard",
+      "status": "queued",
+      "requestedAtUtc": "2026-04-24T11:08:21.411Z",
+      "requester": "dashboard-web"
     }
   ],
-  "updatedAtUtc": "2026-04-24T11:04:28.526Z"
+  "updatedAtUtc": "2026-04-24T11:08:21.411Z"
 }
