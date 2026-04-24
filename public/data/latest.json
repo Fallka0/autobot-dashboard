@@ -75,9 +75,9 @@
       "time": "18:03"
     }
   ],
-  "equity": 100036.08,
+  "equity": 100037.07,
   "exposurePct": 7.0587229663078235,
-  "lastSync": "2026-04-24T11:13:16.653811Z",
+  "lastSync": "2026-04-24T11:16:09.980961Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -147,6 +147,12 @@
   "openPositions": 2,
   "orders": [
     {
+      "detail": "Open order observed.",
+      "status": "submitted",
+      "symbol": "QQQ",
+      "time": "11:15"
+    },
+    {
       "detail": "$7,000 at 707.96",
       "status": "filled",
       "symbol": "SPY",
@@ -203,20 +209,20 @@
   ],
   "positions": [
     {
-      "marketValue": 25.290456,
+      "marketValue": 25.29352,
       "sizePct": 0.0253,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 1.162
+      "unrealizedPnlPct": 1.174
     },
     {
-      "marketValue": 7035.792983,
-      "sizePct": 7.0333,
+      "marketValue": 7036.78075,
+      "sizePct": 7.0342,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.511
+      "unrealizedPnlPct": 0.525
     }
   ],
   "thoughts": [
