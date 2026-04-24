@@ -1,6 +1,6 @@
 {
   "benchmark": "SPY",
-  "botStatus": "Running",
+  "botStatus": "Stopped",
   "cash": 85998.55,
   "closedOutcomes": 0,
   "decisions": [
@@ -9,75 +9,75 @@
       "confidence": 0.8,
       "summary": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
       "symbol": "SPY",
-      "time": "20:25"
+      "time": "20:30"
     },
     {
       "action": "HOLD",
       "confidence": 0.8,
       "summary": "existing long position already open; new add is blocked",
       "symbol": "QQQ",
-      "time": "20:25"
+      "time": "20:30"
     },
     {
       "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
-      "symbol": "SPY",
-      "time": "20:20"
+      "confidence": 0.68,
+      "summary": "breakout or pullback setup is required",
+      "symbol": "NVDA",
+      "time": "20:30"
     },
     {
       "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "existing long position already open; new add is blocked",
-      "symbol": "QQQ",
-      "time": "20:20"
+      "confidence": 0.69,
+      "summary": "relative strength versus SPY must be non-negative",
+      "symbol": "MSFT",
+      "time": "20:30"
     },
     {
       "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
-      "symbol": "SPY",
-      "time": "20:15"
+      "confidence": 0.49,
+      "summary": "trend alignment is required",
+      "symbol": "META",
+      "time": "20:30"
     },
     {
       "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "existing long position already open; new add is blocked",
-      "symbol": "QQQ",
-      "time": "20:15"
+      "confidence": 0.72,
+      "summary": "breakout or pullback setup is required",
+      "symbol": "IWM",
+      "time": "20:30"
     },
     {
       "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
-      "symbol": "SPY",
-      "time": "20:10"
+      "confidence": 0.61,
+      "summary": "relative strength versus SPY must be non-negative",
+      "symbol": "GOOGL",
+      "time": "20:30"
     },
     {
       "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "existing long position already open; new add is blocked",
-      "symbol": "QQQ",
-      "time": "20:10"
+      "confidence": 0.49,
+      "summary": "trend alignment is required",
+      "symbol": "BRK.B",
+      "time": "20:30"
     },
     {
       "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
-      "symbol": "SPY",
-      "time": "20:05"
+      "confidence": 0.49,
+      "summary": "trend alignment is required",
+      "symbol": "AMZN",
+      "time": "20:30"
     },
     {
       "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "existing long position already open; new add is blocked",
-      "symbol": "QQQ",
-      "time": "20:05"
+      "confidence": 0.68,
+      "summary": "breakout or pullback setup is required",
+      "symbol": "AAPL",
+      "time": "20:30"
     }
   ],
-  "equity": 100110.38,
-  "exposurePct": 14.09733018178411,
-  "lastSync": "2026-04-24T20:25:49.826946Z",
+  "equity": 100111.44,
+  "exposurePct": 14.094715999685942,
+  "lastSync": "2026-04-24T20:30:41.551655Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -209,20 +209,20 @@
   ],
   "positions": [
     {
-      "marketValue": 7055.671648,
-      "sizePct": 7.0479,
+      "marketValue": 7056.628566,
+      "sizePct": 7.0488,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.771
+      "unrealizedPnlPct": 0.7849999999999999
     },
     {
-      "marketValue": 7056.161365,
+      "marketValue": 7056.260241,
       "sizePct": 7.0484,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.8019999999999999
+      "unrealizedPnlPct": 0.804
     }
   ],
   "thoughts": [
@@ -231,7 +231,7 @@
       "headline": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
       "symbol": "SPY",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:25",
+      "time": "20:30",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -241,70 +241,70 @@
       "headline": "existing long position already open; new add is blocked",
       "symbol": "QQQ",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "20:25",
+      "time": "20:30",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "headline": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
-      "symbol": "SPY",
+      "headline": "breakout or pullback setup is required",
+      "symbol": "NVDA",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:20",
-      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
-      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
-      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+      "time": "20:30",
+      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
+      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
+      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
     },
     {
       "action": "HOLD",
-      "headline": "existing long position already open; new add is blocked",
-      "symbol": "QQQ",
-      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "20:20",
-      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
-      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
-      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
-    },
-    {
-      "action": "HOLD",
-      "headline": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
-      "symbol": "SPY",
+      "headline": "relative strength versus SPY must be non-negative",
+      "symbol": "MSFT",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:15",
-      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
-      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
-      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+      "time": "20:30",
+      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
+      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
+      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
     },
     {
       "action": "HOLD",
-      "headline": "existing long position already open; new add is blocked",
-      "symbol": "QQQ",
-      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "20:15",
-      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
-      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
-      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
-    },
-    {
-      "action": "HOLD",
-      "headline": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
-      "symbol": "SPY",
+      "headline": "trend alignment is required",
+      "symbol": "META",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:10",
-      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
-      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
-      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+      "time": "20:30",
+      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
+      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
+      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
     },
     {
       "action": "HOLD",
-      "headline": "existing long position already open; new add is blocked",
-      "symbol": "QQQ",
-      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "20:10",
-      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
-      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
-      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+      "headline": "breakout or pullback setup is required",
+      "symbol": "IWM",
+      "thesis": "Rule violation or insufficient setup quality",
+      "time": "20:30",
+      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
+      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
+      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
+    },
+    {
+      "action": "HOLD",
+      "headline": "relative strength versus SPY must be non-negative",
+      "symbol": "GOOGL",
+      "thesis": "Rule violation or insufficient setup quality",
+      "time": "20:30",
+      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
+      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
+      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
+    },
+    {
+      "action": "HOLD",
+      "headline": "trend alignment is required",
+      "symbol": "BRK.B",
+      "thesis": "Rule violation or insufficient setup quality",
+      "time": "20:30",
+      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
+      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
+      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
     }
   ],
   "watchlist": [
@@ -317,24 +317,24 @@
     },
     {
       "confidence": 0.72,
-      "relativeStrengthPct": 0.0562,
-      "setup": "none",
-      "symbol": "NVDA",
-      "watchlistScore": 86.62
-    },
-    {
-      "confidence": 0.72,
-      "relativeStrengthPct": 0.0431,
-      "setup": "none",
-      "symbol": "AAPL",
-      "watchlistScore": 85.31
-    },
-    {
-      "confidence": 0.72,
       "relativeStrengthPct": 0.0179,
       "setup": "none",
       "symbol": "IWM",
       "watchlistScore": 82.79
+    },
+    {
+      "confidence": 0.68,
+      "relativeStrengthPct": 0.0562,
+      "setup": "none",
+      "symbol": "NVDA",
+      "watchlistScore": 82.62
+    },
+    {
+      "confidence": 0.68,
+      "relativeStrengthPct": 0.0431,
+      "setup": "none",
+      "symbol": "AAPL",
+      "watchlistScore": 81.31
     },
     {
       "confidence": 0.69,
@@ -351,5 +351,5 @@
       "watchlistScore": 74.0
     }
   ],
-  "weeklyPnlPct": 0.1116
+  "weeklyPnlPct": 0.1083
 }
