@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { DashboardShell, MetricRow, Panel, orderTone } from "@/components/dashboard-ui";
+import { DashboardShell, MetricRow, Panel, formatLocalTimestamp, orderTone } from "@/components/dashboard-ui";
 import { useDashboardData } from "@/lib/use-dashboard-data";
 
 const controlActions = [
@@ -47,7 +47,10 @@ export default function OperationsPage() {
       if (!response.ok) {
         throw new Error(payload.status ?? `HTTP ${response.status}`);
       }
-      setControlMessage(`${labelForAction(action)} queued at ${payload.command?.requestedAtUtc ?? "now"}. The laptop will pick it up on the next minute tick.`);
+      const queuedAt = payload.command?.requestedAtUtc
+        ? formatLocalTimestamp(payload.command.requestedAtUtc)
+        : "just now";
+      setControlMessage(`${labelForAction(action)} queued at ${queuedAt}. The laptop will pick it up on the next minute tick.`);
     } catch (error) {
       setControlMessage(`Could not queue ${labelForAction(action)}. ${error instanceof Error ? error.message : "Unknown error"}`);
     } finally {

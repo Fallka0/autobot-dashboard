@@ -181,7 +181,7 @@ export function Tag({
   return <span className={`rounded-full px-3 py-1 text-xs font-medium ${palette}`}>{children}</span>;
 }
 
-function formatLocalTimestamp(value: string) {
+export function formatLocalTimestamp(value: string) {
   const parsed = new Date(value);
   if (Number.isNaN(parsed.getTime())) {
     return value;
