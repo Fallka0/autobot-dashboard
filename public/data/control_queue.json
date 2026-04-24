@@ -75,12 +75,38 @@
       "status": "ok"
     },
     {
-      "id": "2669dd6a31cd4d579ee8da2a60ad4f0e",
       "action": "run_position_watch",
-      "status": "queued",
+      "id": "2669dd6a31cd4d579ee8da2a60ad4f0e",
+      "processedAtUtc": "2026-04-24T10:42:30.278280Z",
       "requestedAtUtc": "2026-04-24T10:42:07.960Z",
-      "requester": "dashboard-web"
+      "requester": "dashboard-web",
+      "result": {
+        "action": "run_position_watch",
+        "commandId": "2669dd6a31cd4d579ee8da2a60ad4f0e",
+        "status": "ok",
+        "task": {
+          "commands": [
+            {
+              "command": [
+                "routine",
+                "--routine",
+                "position-watch",
+                "--notify-telegram",
+                "--execute-paper-orders",
+                "--max-order-balance-pct",
+                "7"
+              ],
+              "returncode": 0,
+              "status": "ok"
+            }
+          ],
+          "slot_id": "manual:2669dd6a31cd4d579ee8da2a60ad4f0e",
+          "status": "ok",
+          "task": "manual:run_position_watch"
+        }
+      },
+      "status": "ok"
     }
   ],
-  "updatedAtUtc": "2026-04-24T10:42:07.960Z"
+  "updatedAtUtc": "2026-04-24T10:42:30.278301Z"
 }
