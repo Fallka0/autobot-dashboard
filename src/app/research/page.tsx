@@ -1,6 +1,6 @@
 "use client";
 
-import { DashboardShell, Panel, Tag, confidenceTone, pct } from "@/components/dashboard-ui";
+import { DashboardShell, Panel, Tag, compactPillClasses, confidenceTone, pct } from "@/components/dashboard-ui";
 import { useDashboardData } from "@/lib/use-dashboard-data";
 
 export default function ResearchPage() {
@@ -64,7 +64,7 @@ export default function ResearchPage() {
                 <div key={item.symbol} className="app-card rounded-3xl px-4 py-4">
                   <div className="flex items-center justify-between gap-3">
                     <div className="font-medium text-[var(--text-primary)]">{item.symbol}</div>
-                    <span className={`rounded-full px-3 py-1 text-sm font-medium ${confidenceTone(item.confidence)}`}>
+                    <span className={compactPillClasses(confidenceTone(item.confidence))}>
                       {item.confidence.toFixed(2)}
                     </span>
                   </div>
@@ -90,7 +90,7 @@ export default function ResearchPage() {
                       </div>
                       <div className="mt-2 text-lg font-medium text-[var(--text-primary)]">{thought.headline}</div>
                     </div>
-                    <span className={`rounded-full px-3 py-1 text-sm font-medium ${thought.action === "BUY" ? confidenceTone(0.8) : "app-chip"}`}>
+                    <span className={compactPillClasses(thought.action === "BUY" ? confidenceTone(0.8) : "app-chip")}>
                       {thought.action}
                     </span>
                   </div>
@@ -113,7 +113,7 @@ export default function ResearchPage() {
                   <div className="font-medium text-[var(--text-primary)]">{decision.symbol}</div>
                   <div className="text-sm leading-6 text-[var(--text-secondary)]">{decision.summary}</div>
                   <div className="flex justify-end">
-                    <span className={`rounded-full px-3 py-1 text-sm font-medium ${confidenceTone(decision.confidence)}`}>
+                    <span className={compactPillClasses(confidenceTone(decision.confidence))}>
                       {decision.action} {decision.confidence.toFixed(2)}
                     </span>
                   </div>

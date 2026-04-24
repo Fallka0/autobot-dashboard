@@ -1,6 +1,6 @@
 "use client";
 
-import { DashboardShell, HeroStat, Kpi, Panel, Chip, currency, pct, confidenceTone } from "@/components/dashboard-ui";
+import { DashboardShell, HeroStat, Kpi, Panel, Chip, compactPillClasses, currency, pct, confidenceTone } from "@/components/dashboard-ui";
 import { useDashboardData } from "@/lib/use-dashboard-data";
 
 export default function Home() {
@@ -77,7 +77,7 @@ export default function Home() {
                   <div className="font-medium text-[var(--text-primary)]">{decision.symbol}</div>
                   <div className="text-sm leading-6 text-[var(--text-secondary)]">{decision.summary}</div>
                   <div className="flex justify-end">
-                    <span className={`rounded-full px-3 py-1 text-sm font-medium ${confidenceTone(decision.confidence)}`}>
+                    <span className={compactPillClasses(confidenceTone(decision.confidence))}>
                       {decision.action} {decision.confidence.toFixed(2)}
                     </span>
                   </div>

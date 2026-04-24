@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { DashboardShell, MetricRow, Panel, formatLocalTimestamp, orderTone } from "@/components/dashboard-ui";
+import { DashboardShell, MetricRow, Panel, compactPillClasses, formatLocalTimestamp, orderTone } from "@/components/dashboard-ui";
 import { useDashboardData } from "@/lib/use-dashboard-data";
 
 const controlActions = [
@@ -125,7 +125,7 @@ export default function OperationsPage() {
             <div key={`${order.time}-${order.symbol}-${order.status}`} className="app-card rounded-3xl px-4 py-4">
               <div className="flex items-center justify-between gap-3">
                 <div className="font-medium text-[var(--text-primary)]">{order.symbol}</div>
-                <span className={`rounded-full px-3 py-1 text-sm font-medium capitalize ${orderTone(order.status)}`}>
+                <span className={`${compactPillClasses(orderTone(order.status))} capitalize`}>
                   {order.status}
                 </span>
               </div>

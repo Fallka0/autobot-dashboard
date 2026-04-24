@@ -29,6 +29,10 @@ export function orderTone(status: string) {
   return "app-chip-danger";
 }
 
+export function compactPillClasses(tone: string) {
+  return `inline-flex min-w-[88px] items-center justify-center rounded-full px-2.5 py-1 text-xs font-semibold leading-none text-center ${tone}`;
+}
+
 const navItems = [
   { href: "/", label: "Overview" },
   { href: "/research", label: "News & Thoughts" },
