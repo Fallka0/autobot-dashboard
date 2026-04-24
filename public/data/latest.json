@@ -9,20 +9,6 @@
       "confidence": 0.76,
       "summary": "spread is not reasonable",
       "symbol": "SPY",
-      "time": "11:13"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "existing long position already open; new add is blocked",
-      "symbol": "QQQ",
-      "time": "11:13"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.76,
-      "summary": "spread is not reasonable",
-      "symbol": "SPY",
       "time": "20:38"
     },
     {
@@ -73,11 +59,25 @@
       "summary": "existing long position already open; new add is blocked",
       "symbol": "QQQ",
       "time": "18:03"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "SPY",
+      "time": "17:29"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "time": "17:29"
     }
   ],
-  "equity": 100036.28,
-  "exposurePct": 7.0587229663078235,
-  "lastSync": "2026-04-24T11:51:02.122083Z",
+  "equity": 100036.38,
+  "exposurePct": 7.026182515482053,
+  "lastSync": "2026-04-24T12:00:51.688177Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -85,19 +85,25 @@
   },
   "marketNews": {
     "blocking": [],
-    "headline": "Market Up on Extended Ceasefire; Tesla Due Later: The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations.",
+    "headline": "Market Up on Extended Ceasefire; Tesla Due Later. The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations . Across mu",
     "items": [
       {
         "kind": "headline",
-        "summary": "The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations.",
+        "summary": "The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations .",
         "title": "Market Up on Extended Ceasefire; Tesla Due Later",
         "url": "https://www.schwab.com/learn/story/stock-market-update-open"
       },
       {
         "kind": "headline",
-        "summary": "As part of our opportunistic asset-allocation guidance, we recommend that investors take a global approach to overweighting equities relative to bonds. Specifically, we see attractive opportunities in U.S. large- and mid-cap stocks, as well as international de",
-        "title": "Stock Market News Today | Edward Jones",
-        "url": "https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/daily-market-recap"
+        "summary": "With crude holding above $100 a barrel, concerns of an inflation flare-up persist even if Middle East tensions ease. Tiffany Wilding of PIMCO said any normalization in global growth would take time, given the scale of the oil supply disruption, even if shippin",
+        "title": "US Stock Market Today | Dow Jones | Nasdaq Highlights: US market end lower on waning Iran deal hopes, mixed earnings - The Economic Times",
+        "url": "https://m.economictimes.com/markets/us-stocks/news/us-stock-market-live-dow-jones-sp-500-nasdaq-trump-us-iran-israel-war-ceasefire-talks-brent-crude-oil-ibm-tesla-it-tech-stock-price-news/amp_liveblog/130468197.cms"
+      },
+      {
+        "kind": "headline",
+        "summary": "Federal vs. private ... U.S. markets open in 1h 58m ... Intel's earnings beat adds to tech optimism, but war uncertainty still persist after an extension to the Israel-Lebanon truce.",
+        "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+        "url": "https://finance.yahoo.com/"
       },
       {
         "kind": "headline",
@@ -107,15 +113,9 @@
       },
       {
         "kind": "headline",
-        "summary": "\"It is important to remember that the market was not cheap before the war started, and the recent rally has only brought us back slightly past breakeven for the year,\" he said. \"We expect investors will soon once again turn their attention to more fundamental ",
-        "title": "Stock market news for April 20, 2026",
-        "url": "https://www.cnbc.com/2026/04/19/stock-market-today-live-updates.html"
-      },
-      {
-        "kind": "headline",
-        "summary": "In a much-anticipated hearing before the Senate Banking Committee, the former Fed governor will face questioning over a variety of subjects, from monetary policy to banking regulation to his own complicated personal finances \u00b7 None likely will be more importan",
-        "title": "Stock market news for April 21, 2026",
-        "url": "https://www.cnbc.com/2026/04/20/stock-market-today-live-updates.html"
+        "summary": "As of Wednesday's close, the company's stock had dropped nearly 14% so far this year \u2014 the worst performance of any megacap tech stock this year. Kevin Warsh, U.S. President Donald Trump's nominee for Chair of the Federal Reserve, testifies during his Senate C",
+        "title": "Tesla earnings, the future of Spirit Airlines, WBD shareholder vote and more in Morning Squawk",
+        "url": "https://www.cnbc.com/2026/04/23/5-things-to-know-before-the-market-opens.html"
       },
       {
         "kind": "memory",
@@ -150,7 +150,7 @@
       "detail": "Open order observed.",
       "status": "submitted",
       "symbol": "QQQ",
-      "time": "11:15"
+      "time": "12:00"
     },
     {
       "detail": "$7,000 at 707.96",
@@ -209,20 +209,20 @@
   ],
   "positions": [
     {
-      "marketValue": 25.287967,
+      "marketValue": 25.287009,
       "sizePct": 0.0253,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 1.1520000000000001
+      "unrealizedPnlPct": 1.1480000000000001
     },
     {
-      "marketValue": 7035.990734,
-      "sizePct": 7.0334,
+      "marketValue": 7036.089609,
+      "sizePct": 7.0335,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.514
+      "unrealizedPnlPct": 0.516
     }
   ],
   "thoughts": [
@@ -231,26 +231,6 @@
       "headline": "spread is not reasonable",
       "symbol": "SPY",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "11:13",
-      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
-      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
-      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.76, so this is a monitored stance rather than blind certainty."
-    },
-    {
-      "action": "HOLD",
-      "headline": "existing long position already open; new add is blocked",
-      "symbol": "QQQ",
-      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "11:13",
-      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
-      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
-      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
-    },
-    {
-      "action": "HOLD",
-      "headline": "spread is not reasonable",
-      "symbol": "SPY",
-      "thesis": "Rule violation or insufficient setup quality",
       "time": "20:38",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
@@ -302,6 +282,26 @@
       "symbol": "QQQ",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
       "time": "18:46",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+    },
+    {
+      "action": "HOLD",
+      "headline": "existing long position already open; new add is blocked",
+      "symbol": "SPY",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "18:03",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+    },
+    {
+      "action": "HOLD",
+      "headline": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "18:03",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -351,5 +351,5 @@
       "watchlistScore": 70.71
     }
   ],
-  "weeklyPnlPct": 0.0363
+  "weeklyPnlPct": 0.0013
 }
