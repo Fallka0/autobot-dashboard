@@ -108,12 +108,42 @@
       "status": "ok"
     },
     {
-      "id": "f95a397cb17f47ee887d3ca60f9ffbc2",
       "action": "sync_dashboard",
-      "status": "queued",
+      "id": "f95a397cb17f47ee887d3ca60f9ffbc2",
+      "processedAtUtc": "2026-04-24T10:49:48.753845Z",
       "requestedAtUtc": "2026-04-24T10:49:00.939Z",
-      "requester": "dashboard-web"
+      "requester": "dashboard-web",
+      "result": {
+        "action": "sync_dashboard",
+        "commandId": "f95a397cb17f47ee887d3ca60f9ffbc2",
+        "status": "ok",
+        "task": {
+          "commands": [
+            {
+              "command": [
+                "dashboard",
+                "export",
+                "--publish-github",
+                "--github-owner",
+                "Fallka0",
+                "--github-repo",
+                "autobot-dashboard",
+                "--github-branch",
+                "data",
+                "--gh-bin",
+                "/opt/homebrew/bin/gh"
+              ],
+              "returncode": 0,
+              "status": "ok"
+            }
+          ],
+          "slot_id": "manual:f95a397cb17f47ee887d3ca60f9ffbc2",
+          "status": "ok",
+          "task": "manual:sync_dashboard"
+        }
+      },
+      "status": "ok"
     }
   ],
-  "updatedAtUtc": "2026-04-24T10:49:00.939Z"
+  "updatedAtUtc": "2026-04-24T10:49:48.753894Z"
 }
