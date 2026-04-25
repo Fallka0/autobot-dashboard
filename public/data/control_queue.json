@@ -400,12 +400,33 @@
       "status": "ok"
     },
     {
-      "id": "31678e4d630e470ea713720a0bf48d3c",
       "action": "start_bot",
-      "status": "queued",
+      "id": "31678e4d630e470ea713720a0bf48d3c",
+      "processedAtUtc": "2026-04-25T12:19:37.623022Z",
       "requestedAtUtc": "2026-04-25T12:19:13.193Z",
-      "requester": "dashboard-web"
+      "requester": "dashboard-web",
+      "result": {
+        "action": "start_bot",
+        "commandId": "31678e4d630e470ea713720a0bf48d3c",
+        "status": "ok",
+        "task": {
+          "commands": [
+            {
+              "command": [
+                "state",
+                "start"
+              ],
+              "returncode": 0,
+              "status": "ok"
+            }
+          ],
+          "slot_id": "manual:31678e4d630e470ea713720a0bf48d3c",
+          "status": "ok",
+          "task": "manual:start_bot"
+        }
+      },
+      "status": "ok"
     }
   ],
-  "updatedAtUtc": "2026-04-25T12:19:13.193Z"
+  "updatedAtUtc": "2026-04-25T12:19:37.623062Z"
 }
