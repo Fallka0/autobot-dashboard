@@ -75,9 +75,9 @@
       "time": "20:30"
     }
   ],
-  "equity": 100116.32,
+  "equity": 100125.45,
   "exposurePct": 14.094715999685942,
-  "lastSync": "2026-04-25T12:20:43.384255Z",
+  "lastSync": "2026-04-27T12:10:19.623511Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -120,18 +120,18 @@
       {
         "kind": "memory",
         "summary": "Market Up on Extended Ceasefire; Tesla Due Later: The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations. | Stock Ma",
-        "title": "Persistent fed risk",
+        "title": "Persistent war risk",
         "url": "https://www.schwab.com/learn/story/stock-market-update-open"
       },
       {
         "kind": "memory",
-        "summary": "Market Up on Extended Ceasefire; Tesla Due Later: The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations. | Stock Ma",
-        "title": "Persistent inflation risk",
+        "summary": "Market Up on Extended Ceasefire; Tesla Due Later. The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations . Across mu",
+        "title": "Persistent war risk",
         "url": "https://www.schwab.com/learn/story/stock-market-update-open"
       },
       {
         "kind": "memory",
-        "summary": "Market Up on Extended Ceasefire; Tesla Due Later: The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations. | Stock Ma",
+        "summary": "Market Up on Extended Ceasefire; Tesla Due Later. The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations . Across mu",
         "title": "Persistent war risk",
         "url": "https://www.schwab.com/learn/story/stock-market-update-open"
       }
@@ -209,20 +209,20 @@
   ],
   "positions": [
     {
-      "marketValue": 7058.648725,
-      "sizePct": 7.0504,
+      "marketValue": 7067.579955,
+      "sizePct": 7.0587,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.814
+      "unrealizedPnlPct": 0.941
     },
     {
-      "marketValue": 7059.127634,
-      "sizePct": 7.0509,
+      "marketValue": 7059.325385,
+      "sizePct": 7.0505,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.845
+      "unrealizedPnlPct": 0.848
     }
   ],
   "thoughts": [
