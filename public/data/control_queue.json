@@ -463,7 +463,14 @@
         }
       },
       "status": "ok"
+    },
+    {
+      "id": "8d85ed532c1f45f9869f4e1511385805",
+      "action": "start_bot",
+      "status": "queued",
+      "requestedAtUtc": "2026-04-27T12:05:34.511Z",
+      "requester": "dashboard-web"
     }
   ],
-  "updatedAtUtc": "2026-04-25T12:20:46.082632Z"
+  "updatedAtUtc": "2026-04-27T12:05:34.511Z"
 }
