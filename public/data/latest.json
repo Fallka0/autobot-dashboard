@@ -9,6 +9,34 @@
       "confidence": 0.8,
       "summary": "gross exposure exceeds configured limit",
       "symbol": "SPY",
+      "time": "14:15"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "gross exposure exceeds configured limit",
+      "symbol": "QQQ",
+      "time": "14:15"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "gross exposure exceeds configured limit",
+      "symbol": "NVDA",
+      "time": "14:15"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "gross exposure exceeds configured limit",
+      "symbol": "AAPL",
+      "time": "14:15"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "gross exposure exceeds configured limit",
+      "symbol": "SPY",
       "time": "14:05"
     },
     {
@@ -45,39 +73,11 @@
       "summary": "gross exposure exceeds configured limit",
       "symbol": "QQQ",
       "time": "14:00"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "gross exposure exceeds configured limit",
-      "symbol": "NVDA",
-      "time": "14:00"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "gross exposure exceeds configured limit",
-      "symbol": "AAPL",
-      "time": "14:00"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "gross exposure exceeds configured limit",
-      "symbol": "SPY",
-      "time": "13:55"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "gross exposure exceeds configured limit",
-      "symbol": "QQQ",
-      "time": "13:55"
     }
   ],
-  "equity": 100103.04,
-  "exposurePct": 28.088489690588794,
-  "lastSync": "2026-04-27T14:05:45.598447Z",
+  "equity": 100085.24,
+  "exposurePct": 28.081955499930665,
+  "lastSync": "2026-04-27T14:16:28.293607Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -209,36 +209,36 @@
   ],
   "positions": [
     {
-      "marketValue": 7018.378998,
-      "sizePct": 7.0112,
+      "marketValue": 7019.428907,
+      "sizePct": 7.0135,
       "status": "holding",
       "symbol": "AAPL",
       "thesis": "AAPL shows a pullback setup with aligned trend and 4.27% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.165
+      "unrealizedPnlPct": 0.18
     },
     {
-      "marketValue": 6995.394787,
-      "sizePct": 6.9882,
+      "marketValue": 6981.831215,
+      "sizePct": 6.9759,
       "status": "holding",
       "symbol": "NVDA",
       "thesis": "NVDA shows a pullback setup with aligned trend and 3.41% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": -0.163
+      "unrealizedPnlPct": -0.357
     },
     {
-      "marketValue": 7046.102474,
-      "sizePct": 7.0388,
+      "marketValue": 7043.072235,
+      "sizePct": 7.0371,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.635
+      "unrealizedPnlPct": 0.5910000000000001
     },
     {
-      "marketValue": 7058.633256,
-      "sizePct": 7.0514,
+      "marketValue": 7055.271484,
+      "sizePct": 7.0493,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.8380000000000001
+      "unrealizedPnlPct": 0.79
     }
   ],
   "thoughts": [
@@ -247,7 +247,7 @@
       "headline": "gross exposure exceeds configured limit",
       "symbol": "SPY",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:05",
+      "time": "14:15",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -257,7 +257,7 @@
       "headline": "gross exposure exceeds configured limit",
       "symbol": "QQQ",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:05",
+      "time": "14:15",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -267,7 +267,7 @@
       "headline": "gross exposure exceeds configured limit",
       "symbol": "NVDA",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:05",
+      "time": "14:15",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.899 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -277,7 +277,7 @@
       "headline": "gross exposure exceeds configured limit",
       "symbol": "AAPL",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:05",
+      "time": "14:15",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -287,7 +287,7 @@
       "headline": "gross exposure exceeds configured limit",
       "symbol": "SPY",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:00",
+      "time": "14:05",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -297,7 +297,7 @@
       "headline": "gross exposure exceeds configured limit",
       "symbol": "QQQ",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:00",
+      "time": "14:05",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -307,7 +307,7 @@
       "headline": "gross exposure exceeds configured limit",
       "symbol": "NVDA",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:00",
+      "time": "14:05",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.899 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -317,7 +317,7 @@
       "headline": "gross exposure exceeds configured limit",
       "symbol": "AAPL",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:00",
+      "time": "14:05",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -367,5 +367,5 @@
       "watchlistScore": 74.0
     }
   ],
-  "weeklyPnlPct": 0.1017
+  "weeklyPnlPct": 0.0911
 }
