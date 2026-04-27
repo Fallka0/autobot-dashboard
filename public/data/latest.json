@@ -2,86 +2,86 @@
   "benchmark": "SPY",
   "botStatus": "Running",
   "cash": 100052.96,
-  "closedOutcomes": 6,
+  "closedOutcomes": 0,
   "decisions": [
     {
       "action": "HOLD",
       "confidence": 0.6,
-      "summary": "trend alignment is required",
+      "summary": "market_data is missing, stale, or from the future",
       "symbol": "XLV",
-      "time": "14:36"
+      "time": "14:37"
     },
     {
       "action": "HOLD",
       "confidence": 0.53,
-      "summary": "trend alignment is required",
+      "summary": "market_data is missing, stale, or from the future",
       "symbol": "XLI",
-      "time": "14:36"
+      "time": "14:37"
     },
     {
       "action": "HOLD",
       "confidence": 0.53,
-      "summary": "trend alignment is required",
+      "summary": "market_data is missing, stale, or from the future",
       "symbol": "XLF",
-      "time": "14:36"
+      "time": "14:37"
     },
     {
-      "action": "CLOSE",
+      "action": "HOLD",
       "confidence": 0.8,
-      "summary": "Configured hard stop condition is met.",
+      "summary": "market_data is missing, stale, or from the future",
       "symbol": "SPY",
-      "time": "14:36"
+      "time": "14:37"
     },
     {
       "action": "HOLD",
       "confidence": 0.72,
-      "summary": "breakout or pullback setup is required",
+      "summary": "market_data is missing, stale, or from the future",
       "symbol": "SMH",
-      "time": "14:36"
+      "time": "14:37"
     },
     {
-      "action": "CLOSE",
+      "action": "HOLD",
       "confidence": 0.8,
-      "summary": "Configured hard stop condition is met.",
+      "summary": "market_data is missing, stale, or from the future",
       "symbol": "QQQ",
-      "time": "14:36"
+      "time": "14:37"
     },
     {
-      "action": "CLOSE",
+      "action": "HOLD",
       "confidence": 0.8,
-      "summary": "Configured hard stop condition is met.",
+      "summary": "market_data is missing, stale, or from the future",
       "symbol": "NVDA",
-      "time": "14:36"
+      "time": "14:37"
     },
     {
       "action": "HOLD",
-      "confidence": 0.56,
-      "summary": "trend alignment is required",
+      "confidence": 0.6,
+      "summary": "market_data is missing, stale, or from the future",
       "symbol": "MSFT",
-      "time": "14:36"
+      "time": "14:37"
     },
     {
       "action": "HOLD",
       "confidence": 0.53,
-      "summary": "trend alignment is required",
+      "summary": "market_data is missing, stale, or from the future",
       "symbol": "META",
-      "time": "14:36"
+      "time": "14:37"
     },
     {
       "action": "HOLD",
       "confidence": 0.53,
-      "summary": "trend alignment is required",
+      "summary": "market_data is missing, stale, or from the future",
       "symbol": "JPM",
-      "time": "14:36"
+      "time": "14:37"
     }
   ],
   "equity": 100052.96,
-  "exposurePct": 28.07236128073122,
-  "lastSync": "2026-04-27T14:37:48.610960Z",
+  "exposurePct": 28.072361280731215,
+  "lastSync": "2026-04-27T14:38:39.322670Z",
   "learning": {
-    "closedWithPnl": 6,
-    "note": "Closed outcomes are underperforming; shrink future entries.",
-    "openTrackedOutcomes": 5
+    "closedWithPnl": 0,
+    "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
+    "openTrackedOutcomes": 11
   },
   "marketNews": {
     "blocking": [],
@@ -150,49 +150,25 @@
       "detail": "at 267.21",
       "status": "filled",
       "symbol": "AAPL",
-      "time": "14:37"
+      "time": "14:38"
     },
     {
       "detail": "at 208.89",
       "status": "filled",
       "symbol": "NVDA",
-      "time": "14:37"
+      "time": "14:38"
     },
     {
       "detail": "at 662.50",
       "status": "filled",
       "symbol": "QQQ",
-      "time": "14:37"
+      "time": "14:38"
     },
     {
       "detail": "at 713.79",
       "status": "filled",
       "symbol": "SPY",
-      "time": "14:37"
-    },
-    {
-      "detail": "Submitted order observed.",
-      "status": "submitted",
-      "symbol": "SPY",
-      "time": "14:36"
-    },
-    {
-      "detail": "Submitted order observed.",
-      "status": "submitted",
-      "symbol": "QQQ",
-      "time": "14:36"
-    },
-    {
-      "detail": "Submitted order observed.",
-      "status": "submitted",
-      "symbol": "NVDA",
-      "time": "14:36"
-    },
-    {
-      "detail": "Submitted order observed.",
-      "status": "submitted",
-      "symbol": "AAPL",
-      "time": "14:36"
+      "time": "14:38"
     },
     {
       "detail": "$7,007 at 266.95",
@@ -205,6 +181,30 @@
       "status": "filled",
       "symbol": "NVDA",
       "time": "13:40"
+    },
+    {
+      "detail": "$7,007",
+      "status": "submitted",
+      "symbol": "AAPL",
+      "time": "13:31"
+    },
+    {
+      "detail": "$7,007",
+      "status": "submitted",
+      "symbol": "NVDA",
+      "time": "13:31"
+    },
+    {
+      "detail": "$7,007",
+      "status": "submitted",
+      "symbol": "NVDA",
+      "time": "13:30"
+    },
+    {
+      "detail": "$7,007",
+      "status": "submitted",
+      "symbol": "AAPL",
+      "time": "13:30"
     }
   ],
   "positions": [],
@@ -213,164 +213,164 @@
       {
         "completedAtUtc": "2026-04-27T14:01:07.396866Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:00:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:00:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:00:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:00:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:00",
         "status": "completed"
       },
       {
         "completedAtUtc": "2026-04-27T14:05:48.236032Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:05:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:05:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:05:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:05:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:05",
         "status": "completed"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:10:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:10:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:10:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:10:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:10",
         "status": "missed"
       },
       {
         "completedAtUtc": "2026-04-27T14:16:32.695290Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:15:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:15:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:15:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:15:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:15",
         "status": "completed"
       },
       {
         "completedAtUtc": "2026-04-27T14:21:04.549631Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:20:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:20:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:20:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:20:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:20",
         "status": "completed"
       },
       {
         "completedAtUtc": "2026-04-27T14:25:39.765548Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:25:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:25:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:25:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:25:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:25",
         "status": "completed"
       },
       {
         "completedAtUtc": "2026-04-27T14:33:22.552476Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:30:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:30:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:30:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:30:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:30",
         "status": "completed"
       },
       {
-        "completedAtUtc": null,
+        "completedAtUtc": "2026-04-27T14:37:50.898359Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:35:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:35:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:35:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:35:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:35",
-        "status": "missed"
+        "status": "completed"
       }
     ],
-    "schedulerUpdatedAtUtc": "2026-04-27T14:35:36.252828Z",
+    "schedulerUpdatedAtUtc": "2026-04-27T14:37:51.540771Z",
     "timezone": "America/New_York",
     "upcoming": [
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:40:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:40:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:40:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:40:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:40",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:45:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:45:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:45:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:45:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:45",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:50:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:50:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:50:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:50:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:50",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:55:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T14:55:48.610960Z",
+        "scheduledLocal": "2026-04-27T10:55:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T14:55:39.322670Z",
         "slotId": "position-watch:2026-04-27T10:55",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:00:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T15:00:48.610960Z",
+        "scheduledLocal": "2026-04-27T11:00:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T15:00:39.322670Z",
         "slotId": "position-watch:2026-04-27T11:00",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:05:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T15:05:48.610960Z",
+        "scheduledLocal": "2026-04-27T11:05:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T15:05:39.322670Z",
         "slotId": "position-watch:2026-04-27T11:05",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:10:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T15:10:48.610960Z",
+        "scheduledLocal": "2026-04-27T11:10:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T15:10:39.322670Z",
         "slotId": "position-watch:2026-04-27T11:10",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:15:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T15:15:48.610960Z",
+        "scheduledLocal": "2026-04-27T11:15:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T15:15:39.322670Z",
         "slotId": "position-watch:2026-04-27T11:15",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:20:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T15:20:48.610960Z",
+        "scheduledLocal": "2026-04-27T11:20:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T15:20:39.322670Z",
         "slotId": "position-watch:2026-04-27T11:20",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:25:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T15:25:48.610960Z",
+        "scheduledLocal": "2026-04-27T11:25:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T15:25:39.322670Z",
         "slotId": "position-watch:2026-04-27T11:25",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:30:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T15:30:48.610960Z",
+        "scheduledLocal": "2026-04-27T11:30:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T15:30:39.322670Z",
         "slotId": "position-watch:2026-04-27T11:30",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:35:48.610960-04:00",
-        "scheduledUtc": "2026-04-27T15:35:48.610960Z",
+        "scheduledLocal": "2026-04-27T11:35:39.322670-04:00",
+        "scheduledUtc": "2026-04-27T15:35:39.322670Z",
         "slotId": "position-watch:2026-04-27T11:35",
         "status": "upcoming"
       }
@@ -379,80 +379,80 @@
   "thoughts": [
     {
       "action": "HOLD",
-      "headline": "trend alignment is required",
+      "headline": "market_data is missing, stale, or from the future",
       "symbol": "XLV",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:36",
+      "time": "14:37",
       "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
       "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
       "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
     },
     {
       "action": "HOLD",
-      "headline": "trend alignment is required",
+      "headline": "market_data is missing, stale, or from the future",
       "symbol": "XLI",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:36",
+      "time": "14:37",
       "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
       "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
       "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
     },
     {
       "action": "HOLD",
-      "headline": "trend alignment is required",
+      "headline": "market_data is missing, stale, or from the future",
       "symbol": "XLF",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:36",
+      "time": "14:37",
       "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
       "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
       "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
     },
     {
-      "action": "CLOSE",
-      "headline": "Configured hard stop condition is met.",
+      "action": "HOLD",
+      "headline": "market_data is missing, stale, or from the future",
       "symbol": "SPY",
-      "thesis": "Configured hard stop condition is met.",
-      "time": "14:36",
-      "whatCanBreakIt": "The bot thinks the balance of evidence has shifted against the trade, so waiting for a cleaner signal matters less than reducing risk.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
+      "thesis": "Rule violation or insufficient setup quality",
+      "time": "14:37",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "headline": "breakout or pullback setup is required",
+      "headline": "market_data is missing, stale, or from the future",
       "symbol": "SMH",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:36",
+      "time": "14:37",
       "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
       "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
       "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
     },
     {
-      "action": "CLOSE",
-      "headline": "Configured hard stop condition is met.",
+      "action": "HOLD",
+      "headline": "market_data is missing, stale, or from the future",
       "symbol": "QQQ",
-      "thesis": "Configured hard stop condition is met.",
-      "time": "14:36",
-      "whatCanBreakIt": "The bot thinks the balance of evidence has shifted against the trade, so waiting for a cleaner signal matters less than reducing risk.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
-    },
-    {
-      "action": "CLOSE",
-      "headline": "Configured hard stop condition is met.",
-      "symbol": "NVDA",
-      "thesis": "Configured hard stop condition is met.",
-      "time": "14:36",
-      "whatCanBreakIt": "The bot thinks the balance of evidence has shifted against the trade, so waiting for a cleaner signal matters less than reducing risk.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
+      "thesis": "Rule violation or insufficient setup quality",
+      "time": "14:37",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "headline": "trend alignment is required",
+      "headline": "market_data is missing, stale, or from the future",
+      "symbol": "NVDA",
+      "thesis": "Rule violation or insufficient setup quality",
+      "time": "14:37",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.899 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+    },
+    {
+      "action": "HOLD",
+      "headline": "market_data is missing, stale, or from the future",
       "symbol": "MSFT",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "14:36",
+      "time": "14:37",
       "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
       "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
       "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
@@ -502,5 +502,5 @@
       "watchlistScore": 89.33
     }
   ],
-  "weeklyPnlPct": 0.0766
+  "weeklyPnlPct": 0.0391
 }
