@@ -7,115 +7,115 @@
     {
       "action": "HOLD",
       "confidence": 0.8,
-      "summary": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
+      "summary": "existing long position already open; new add is blocked",
       "symbol": "SPY",
-      "time": "20:30"
+      "time": "13:30"
     },
     {
       "action": "HOLD",
       "confidence": 0.8,
       "summary": "existing long position already open; new add is blocked",
       "symbol": "QQQ",
-      "time": "20:30"
+      "time": "13:30"
     },
     {
-      "action": "HOLD",
-      "confidence": 0.68,
-      "summary": "breakout or pullback setup is required",
+      "action": "BUY",
+      "confidence": 0.8,
+      "summary": "Symbol is allowed by the configured universe.",
       "symbol": "NVDA",
-      "time": "20:30"
+      "time": "13:30"
     },
     {
       "action": "HOLD",
-      "confidence": 0.69,
-      "summary": "relative strength versus SPY must be non-negative",
+      "confidence": 0.56,
+      "summary": "trend alignment is required",
       "symbol": "MSFT",
-      "time": "20:30"
+      "time": "13:30"
     },
     {
       "action": "HOLD",
       "confidence": 0.49,
       "summary": "trend alignment is required",
       "symbol": "META",
-      "time": "20:30"
+      "time": "13:30"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "new position would exceed correlation guard",
+      "symbol": "IWM",
+      "time": "13:30"
     },
     {
       "action": "HOLD",
       "confidence": 0.72,
       "summary": "breakout or pullback setup is required",
-      "symbol": "IWM",
-      "time": "20:30"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.61,
-      "summary": "relative strength versus SPY must be non-negative",
       "symbol": "GOOGL",
-      "time": "20:30"
+      "time": "13:30"
     },
     {
       "action": "HOLD",
-      "confidence": 0.49,
+      "confidence": 0.53,
       "summary": "trend alignment is required",
       "symbol": "BRK.B",
-      "time": "20:30"
+      "time": "13:30"
     },
     {
       "action": "HOLD",
-      "confidence": 0.49,
+      "confidence": 0.53,
       "summary": "trend alignment is required",
       "symbol": "AMZN",
-      "time": "20:30"
+      "time": "13:30"
     },
     {
-      "action": "HOLD",
-      "confidence": 0.68,
-      "summary": "breakout or pullback setup is required",
+      "action": "BUY",
+      "confidence": 0.8,
+      "summary": "Symbol is allowed by the configured universe.",
       "symbol": "AAPL",
-      "time": "20:30"
+      "time": "13:30"
     }
   ],
-  "equity": 100119.64,
-  "exposurePct": 14.094715999685942,
-  "lastSync": "2026-04-27T12:23:43.366256Z",
+  "equity": 100099.34,
+  "exposurePct": 14.085133807863382,
+  "lastSync": "2026-04-27T13:31:36.165932Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
-    "openTrackedOutcomes": 9
+    "openTrackedOutcomes": 11
   },
   "marketNews": {
     "blocking": [],
-    "headline": "Schwab Market Update",
+    "headline": "stock futures today: Why are US stock market futures up today, and will S&P 500, Dow Jones and Nasdaq stay in green or turn red again? Wall Street futures, stocks to watch, analyst. Major companies including Boeing, Tesla, and Adobe moved in premarket trading.",
     "items": [
+      {
+        "kind": "headline",
+        "summary": "Major companies including Boeing, Tesla, and Adobe moved in premarket trading. Analysts say markets want stability but risks remain. Investors are now watching earnings, geopolitics, inflation, and consumer strength.",
+        "title": "stock futures today: Why are US stock market futures up today, and will S&P 500, Dow Jones and Nasdaq stay in green or turn red again? Wall Street futures, stocks to watch, analyst",
+        "url": "https://economictimes.indiatimes.com/news/international/us/why-are-us-stock-market-futures-up-today-and-will-sp-500-dow-jones-and-nasdaq-stay-in-green-or-turn-red-again-wall-street-futures-stocks-to-watch-analysts-insights-investor-guide-and-market-outlook/articleshow/130437160.cms"
+      },
+      {
+        "kind": "headline",
+        "summary": "Warsh, who is on track to succeed current Chair Jerome Powell, wants to lower interest rates and shrink the Fed's balance sheet. Inflation may get in the way. ... Consumers are already feeling the effects of the closure of the Strait of Hormuz with energy pric",
+        "title": "Today's Stock Market News and Breaking Stories",
+        "url": "https://stockanalysis.com/news/"
+      },
+      {
+        "kind": "headline",
+        "summary": "Here you can find premarket quotes for relevant stock market futures and world markets indices, commodities and currencies.",
+        "title": "Premarket | Futures | Pre-market Trading | Markets Insider",
+        "url": "https://markets.businessinsider.com/premarket"
+      },
+      {
+        "kind": "headline",
+        "summary": "Earlier in the session, US stock futures had opened lower after President Donald Trump cancelled plans to send senior envoys for a second round of talks with Iran, while Tehran reiterated it would not engage in negotiations under threats or blockade conditions",
+        "title": "United States Stock Market Index - Quote - Chart - Historical Data - News | Trading Economics",
+        "url": "https://tradingeconomics.com/united-states/stock-market"
+      },
       {
         "kind": "headline",
         "summary": "The coming week brings a host of ... and, perhaps most important, the Fed's favorite inflation reading, Personal Consumption Expenditures (PCE) prices ....",
         "title": "Schwab Market Update | Charles Schwab",
         "url": "https://www.schwab.com/learn/story/stock-market-update-open"
-      },
-      {
-        "kind": "headline",
-        "summary": "Speak to your financial adviser to help ensure that your portfolio has appropriate diversification for the current environment, based on helping achieve your financial goals. ... All data in commentary sourced from Bloomberg, the Congressional Budget Office, a",
-        "title": "Weekly Stock Market Update | Edward Jones",
-        "url": "https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/stock-market-weekly-update"
-      },
-      {
-        "kind": "headline",
-        "summary": "Next week also features data on first-quarter U.S. economic growth, as well as the March Personal Consumption Expenditures Price Index, the Fed's \u2060preferred gauge for \u200binflation.",
-        "title": "Wall St Week Ahead Soaring US stocks face pivotal week of tech-led earnings, Fed meeting | Reuters",
-        "url": "https://www.reuters.com/business/wall-st-week-ahead-soaring-us-stocks-face-pivotal-week-tech-led-earnings-fed-2026-04-24/"
-      },
-      {
-        "kind": "headline",
-        "summary": "As part of our opportunistic asset-allocation guidance, we recommend that investors take a global approach to overweighting equities relative to bonds. Specifically, we see attractive opportunities in U.S. large- and mid-cap stocks, as well as international de",
-        "title": "Stock Market News Today | Edward Jones",
-        "url": "https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/daily-market-recap"
-      },
-      {
-        "kind": "headline",
-        "summary": "Federal vs.",
-        "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
-        "url": "https://finance.yahoo.com/"
       },
       {
         "kind": "memory",
@@ -146,6 +146,30 @@
   "mode": "Paper",
   "openPositions": 2,
   "orders": [
+    {
+      "detail": "$7,007",
+      "status": "submitted",
+      "symbol": "AAPL",
+      "time": "13:31"
+    },
+    {
+      "detail": "$7,007",
+      "status": "submitted",
+      "symbol": "NVDA",
+      "time": "13:31"
+    },
+    {
+      "detail": "$7,007",
+      "status": "submitted",
+      "symbol": "NVDA",
+      "time": "13:30"
+    },
+    {
+      "detail": "$7,007",
+      "status": "submitted",
+      "symbol": "AAPL",
+      "time": "13:30"
+    },
     {
       "detail": "$7,002 at 658.52",
       "status": "filled",
@@ -181,57 +205,33 @@
       "status": "filled",
       "symbol": "SPY",
       "time": "17:12"
-    },
-    {
-      "detail": "$7,000",
-      "status": "submitted",
-      "symbol": "SPY",
-      "time": "17:07"
-    },
-    {
-      "detail": "$7,000",
-      "status": "blocked",
-      "symbol": "SPY",
-      "time": "17:07"
-    },
-    {
-      "detail": "$25 at 652.77",
-      "status": "filled",
-      "symbol": "QQQ",
-      "time": "17:08"
-    },
-    {
-      "detail": "$25",
-      "status": "submitted",
-      "symbol": "QQQ",
-      "time": "17:07"
     }
   ],
   "positions": [
     {
-      "marketValue": 7062.26481,
-      "sizePct": 7.0538,
+      "marketValue": 7046.421446,
+      "sizePct": 7.0394,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.8659999999999999
+      "unrealizedPnlPct": 0.639
     },
     {
-      "marketValue": 7058.831007,
-      "sizePct": 7.0504,
+      "marketValue": 7054.470591,
+      "sizePct": 7.0475,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.84
+      "unrealizedPnlPct": 0.7779999999999999
     }
   ],
   "thoughts": [
     {
       "action": "HOLD",
-      "headline": "benchmark entry needs clearly positive edge, not merely neutral relative strength",
+      "headline": "existing long position already open; new add is blocked",
       "symbol": "SPY",
-      "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "13:30",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -241,27 +241,27 @@
       "headline": "existing long position already open; new add is blocked",
       "symbol": "QQQ",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "20:30",
+      "time": "13:30",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
-      "action": "HOLD",
-      "headline": "breakout or pullback setup is required",
+      "action": "BUY",
+      "headline": "Symbol is allowed by the configured universe.",
       "symbol": "NVDA",
-      "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
-      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
+      "thesis": "NVDA shows a pullback setup with aligned trend and 3.41% 20-day relative strength versus SPY.",
+      "time": "13:30",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.899 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "headline": "relative strength versus SPY must be non-negative",
+      "headline": "trend alignment is required",
       "symbol": "MSFT",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
+      "time": "13:30",
       "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
       "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
       "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
@@ -271,7 +271,17 @@
       "headline": "trend alignment is required",
       "symbol": "META",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
+      "time": "13:30",
+      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
+      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
+      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
+    },
+    {
+      "action": "HOLD",
+      "headline": "new position would exceed correlation guard",
+      "symbol": "IWM",
+      "thesis": "Portfolio constraints block new entry",
+      "time": "13:30",
       "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
       "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
       "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
@@ -279,19 +289,9 @@
     {
       "action": "HOLD",
       "headline": "breakout or pullback setup is required",
-      "symbol": "IWM",
-      "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
-      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
-    },
-    {
-      "action": "HOLD",
-      "headline": "relative strength versus SPY must be non-negative",
       "symbol": "GOOGL",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
+      "time": "13:30",
       "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
       "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
       "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
@@ -301,7 +301,7 @@
       "headline": "trend alignment is required",
       "symbol": "BRK.B",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
+      "time": "13:30",
       "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
       "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
       "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
@@ -310,38 +310,38 @@
   "watchlist": [
     {
       "confidence": 0.8,
-      "relativeStrengthPct": 0.0142,
+      "relativeStrengthPct": 0.0427,
+      "setup": "pullback",
+      "symbol": "AAPL",
+      "watchlistScore": 93.27
+    },
+    {
+      "confidence": 0.8,
+      "relativeStrengthPct": 0.0341,
+      "setup": "pullback",
+      "symbol": "NVDA",
+      "watchlistScore": 92.905
+    },
+    {
+      "confidence": 0.8,
+      "relativeStrengthPct": 0.0103,
       "setup": "pullback",
       "symbol": "QQQ",
-      "watchlistScore": 90.42
+      "watchlistScore": 90.03
+    },
+    {
+      "confidence": 0.8,
+      "relativeStrengthPct": 0.0033,
+      "setup": "pullback",
+      "symbol": "IWM",
+      "watchlistScore": 89.33
     },
     {
       "confidence": 0.72,
-      "relativeStrengthPct": 0.0179,
+      "relativeStrengthPct": 0.0002,
       "setup": "none",
-      "symbol": "IWM",
-      "watchlistScore": 82.79
-    },
-    {
-      "confidence": 0.68,
-      "relativeStrengthPct": 0.0562,
-      "setup": "none",
-      "symbol": "NVDA",
-      "watchlistScore": 82.62
-    },
-    {
-      "confidence": 0.68,
-      "relativeStrengthPct": 0.0431,
-      "setup": "none",
-      "symbol": "AAPL",
-      "watchlistScore": 81.31
-    },
-    {
-      "confidence": 0.69,
-      "relativeStrengthPct": -0.0058,
-      "setup": "pullback",
-      "symbol": "MSFT",
-      "watchlistScore": 77.42
+      "symbol": "GOOGL",
+      "watchlistScore": 81.02
     },
     {
       "confidence": 0.8,
@@ -351,5 +351,5 @@
       "watchlistScore": 74.0
     }
   ],
-  "weeklyPnlPct": 0.1083
+  "weeklyPnlPct": 0.0976
 }
