@@ -465,19 +465,70 @@
       "status": "ok"
     },
     {
-      "id": "8d85ed532c1f45f9869f4e1511385805",
       "action": "start_bot",
-      "status": "queued",
+      "id": "8d85ed532c1f45f9869f4e1511385805",
+      "processedAtUtc": "2026-04-27T12:10:17.190163Z",
       "requestedAtUtc": "2026-04-27T12:05:34.511Z",
-      "requester": "dashboard-web"
+      "requester": "dashboard-web",
+      "result": {
+        "action": "start_bot",
+        "commandId": "8d85ed532c1f45f9869f4e1511385805",
+        "status": "ok",
+        "task": {
+          "commands": [
+            {
+              "command": [
+                "state",
+                "start"
+              ],
+              "returncode": 0,
+              "status": "ok"
+            }
+          ],
+          "slot_id": "manual:8d85ed532c1f45f9869f4e1511385805",
+          "status": "ok",
+          "task": "manual:start_bot"
+        }
+      },
+      "status": "ok"
     },
     {
-      "id": "773daa73b26344e3b2d5b2df590efcd0",
       "action": "sync_dashboard",
-      "status": "queued",
+      "id": "773daa73b26344e3b2d5b2df590efcd0",
+      "processedAtUtc": "2026-04-27T12:10:21.468219Z",
       "requestedAtUtc": "2026-04-27T12:05:41.304Z",
-      "requester": "dashboard-web"
+      "requester": "dashboard-web",
+      "result": {
+        "action": "sync_dashboard",
+        "commandId": "773daa73b26344e3b2d5b2df590efcd0",
+        "status": "ok",
+        "task": {
+          "commands": [
+            {
+              "command": [
+                "dashboard",
+                "export",
+                "--publish-github",
+                "--github-owner",
+                "Fallka0",
+                "--github-repo",
+                "autobot-dashboard",
+                "--github-branch",
+                "data",
+                "--gh-bin",
+                "/opt/homebrew/bin/gh"
+              ],
+              "returncode": 0,
+              "status": "ok"
+            }
+          ],
+          "slot_id": "manual:773daa73b26344e3b2d5b2df590efcd0",
+          "status": "ok",
+          "task": "manual:sync_dashboard"
+        }
+      },
+      "status": "ok"
     }
   ],
-  "updatedAtUtc": "2026-04-27T12:05:41.304Z"
+  "updatedAtUtc": "2026-04-27T12:10:21.468260Z"
 }
