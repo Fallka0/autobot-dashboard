@@ -35,6 +35,7 @@ export function compactPillClasses(tone: string) {
 
 const navItems = [
   { href: "/", label: "Overview" },
+  { href: "/timetable", label: "Timetable" },
   { href: "/research", label: "News & Thoughts" },
   { href: "/ask", label: "Ask AutoBot" },
   { href: "/operations", label: "Operations" },

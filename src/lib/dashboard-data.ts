@@ -9,6 +9,7 @@ export type Position = {
 
 export type DecisionEvent = {
   time: string;
+  timestampUtc?: string;
   symbol: string;
   action: "BUY" | "HOLD" | "TRIM" | "CLOSE" | "SELL";
   summary: string;
@@ -17,6 +18,7 @@ export type DecisionEvent = {
 
 export type OrderEvent = {
   time: string;
+  timestampUtc?: string;
   symbol: string;
   status: "filled" | "submitted" | "canceled" | "blocked";
   detail: string;
@@ -24,6 +26,7 @@ export type OrderEvent = {
 
 export type ThoughtEvent = {
   time: string;
+  timestampUtc?: string;
   symbol: string;
   action: "BUY" | "HOLD" | "TRIM" | "CLOSE" | "SELL";
   headline: string;
@@ -38,6 +41,15 @@ export type NewsItem = {
   summary: string;
   url: string;
   kind: "headline" | "memory";
+};
+
+export type ScheduleSlot = {
+  slotId: string;
+  name: string;
+  scheduledLocal: string;
+  scheduledUtc: string;
+  status: "completed" | "upcoming" | "missed";
+  completedAtUtc?: string;
 };
 
 export type DashboardData = {
@@ -67,6 +79,12 @@ export type DashboardData = {
     openTrackedOutcomes: number;
     closedWithPnl: number;
     note: string;
+  };
+  schedule: {
+    timezone: string;
+    schedulerUpdatedAtUtc?: string;
+    recent: ScheduleSlot[];
+    upcoming: ScheduleSlot[];
   };
 };
 
@@ -180,6 +198,36 @@ export const fallbackDashboardData: DashboardData = {
     openTrackedOutcomes: 8,
     closedWithPnl: 0,
     note: "The bot is still collecting completed trade cycles before changing sizing or blocking setups.",
+  },
+  schedule: {
+    timezone: "America/New_York",
+    schedulerUpdatedAtUtc: "2026-04-23T17:29:00Z",
+    recent: [
+      {
+        slotId: "position-watch:2026-04-23T09:35",
+        name: "position-watch",
+        scheduledLocal: "2026-04-23T09:35:00-04:00",
+        scheduledUtc: "2026-04-23T13:35:00Z",
+        status: "completed",
+        completedAtUtc: "2026-04-23T13:35:41Z",
+      },
+    ],
+    upcoming: [
+      {
+        slotId: "position-watch:2026-04-23T09:40",
+        name: "position-watch",
+        scheduledLocal: "2026-04-23T09:40:00-04:00",
+        scheduledUtc: "2026-04-23T13:40:00Z",
+        status: "upcoming",
+      },
+      {
+        slotId: "position-watch:2026-04-23T09:45",
+        name: "position-watch",
+        scheduledLocal: "2026-04-23T09:45:00-04:00",
+        scheduledUtc: "2026-04-23T13:45:00Z",
+        status: "upcoming",
+      },
+    ],
   },
 };
 

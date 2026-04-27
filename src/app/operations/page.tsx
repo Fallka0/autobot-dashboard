@@ -129,7 +129,9 @@ export default function OperationsPage() {
                   {order.status}
                 </span>
               </div>
-              <div className="mt-1 text-sm text-[var(--text-muted)]">{order.time} UTC</div>
+              <div className="mt-1 text-sm text-[var(--text-muted)]">
+                {order.timestampUtc ? formatLocalTimestamp(order.timestampUtc) : order.time}
+              </div>
               <div className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">{order.detail}</div>
             </div>
           ))}

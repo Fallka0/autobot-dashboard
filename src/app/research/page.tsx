@@ -1,6 +1,6 @@
 "use client";
 
-import { DashboardShell, Panel, Tag, compactPillClasses, confidenceTone, pct } from "@/components/dashboard-ui";
+import { DashboardShell, Panel, Tag, compactPillClasses, confidenceTone, formatLocalTimestamp, pct } from "@/components/dashboard-ui";
 import { useDashboardData } from "@/lib/use-dashboard-data";
 
 export default function ResearchPage() {
@@ -86,7 +86,7 @@ export default function ResearchPage() {
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <div className="text-xs uppercase tracking-[0.12em] text-[var(--text-muted)]">
-                        {thought.time} · {thought.symbol}
+                        {(thought.timestampUtc ? formatLocalTimestamp(thought.timestampUtc) : thought.time)} · {thought.symbol}
                       </div>
                       <div className="mt-2 text-lg font-medium text-[var(--text-primary)]">{thought.headline}</div>
                     </div>
@@ -109,7 +109,9 @@ export default function ResearchPage() {
             <div className="space-y-3">
               {data.decisions.map((decision) => (
                 <div key={`${decision.time}-${decision.symbol}-${decision.action}`} className="app-card grid gap-3 rounded-3xl px-4 py-4 md:grid-cols-[72px_72px_1fr_auto]">
-                  <div className="text-xs uppercase tracking-[0.12em] text-[var(--text-muted)]">{decision.time}</div>
+                  <div className="text-xs uppercase tracking-[0.12em] text-[var(--text-muted)]">
+                    {decision.timestampUtc ? formatLocalTimestamp(decision.timestampUtc) : decision.time}
+                  </div>
                   <div className="font-medium text-[var(--text-primary)]">{decision.symbol}</div>
                   <div className="text-sm leading-6 text-[var(--text-secondary)]">{decision.summary}</div>
                   <div className="flex justify-end">

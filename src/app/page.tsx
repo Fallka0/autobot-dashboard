@@ -1,6 +1,6 @@
 "use client";
 
-import { DashboardShell, HeroStat, Kpi, Panel, Chip, compactPillClasses, currency, pct, confidenceTone } from "@/components/dashboard-ui";
+import { DashboardShell, HeroStat, Kpi, Panel, Chip, compactPillClasses, currency, pct, confidenceTone, formatLocalTimestamp } from "@/components/dashboard-ui";
 import { useDashboardData } from "@/lib/use-dashboard-data";
 
 export default function Home() {
@@ -73,7 +73,9 @@ export default function Home() {
             <div className="space-y-3">
               {data.decisions.slice(0, 5).map((decision) => (
                 <div key={`${decision.time}-${decision.symbol}-${decision.action}`} className="app-card grid gap-3 rounded-3xl px-4 py-4 md:grid-cols-[64px_72px_1fr_auto]">
-                  <div className="text-xs uppercase tracking-[0.12em] text-[var(--text-muted)]">{decision.time}</div>
+                  <div className="text-xs uppercase tracking-[0.12em] text-[var(--text-muted)]">
+                    {decision.timestampUtc ? formatLocalTimestamp(decision.timestampUtc) : decision.time}
+                  </div>
                   <div className="font-medium text-[var(--text-primary)]">{decision.symbol}</div>
                   <div className="text-sm leading-6 text-[var(--text-secondary)]">{decision.summary}</div>
                   <div className="flex justify-end">
