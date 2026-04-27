@@ -1,9 +1,37 @@
 {
   "benchmark": "SPY",
   "botStatus": "Running",
-  "cash": 85998.54,
+  "cash": 71984.88,
   "closedOutcomes": 0,
   "decisions": [
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "gross exposure exceeds configured limit",
+      "symbol": "SPY",
+      "time": "13:40"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "gross exposure exceeds configured limit",
+      "symbol": "QQQ",
+      "time": "13:40"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "gross exposure exceeds configured limit",
+      "symbol": "NVDA",
+      "time": "13:40"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "gross exposure exceeds configured limit",
+      "symbol": "AAPL",
+      "time": "13:40"
+    },
     {
       "action": "HOLD",
       "confidence": 0.8,
@@ -45,39 +73,11 @@
       "summary": "new position would exceed correlation guard",
       "symbol": "IWM",
       "time": "13:30"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.72,
-      "summary": "breakout or pullback setup is required",
-      "symbol": "GOOGL",
-      "time": "13:30"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.53,
-      "summary": "trend alignment is required",
-      "symbol": "BRK.B",
-      "time": "13:30"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.53,
-      "summary": "trend alignment is required",
-      "symbol": "AMZN",
-      "time": "13:30"
-    },
-    {
-      "action": "BUY",
-      "confidence": 0.8,
-      "summary": "Symbol is allowed by the configured universe.",
-      "symbol": "AAPL",
-      "time": "13:30"
     }
   ],
-  "equity": 100099.34,
-  "exposurePct": 14.085133807863382,
-  "lastSync": "2026-04-27T13:31:36.165932Z",
+  "equity": 100131.6,
+  "exposurePct": 28.115296386852158,
+  "lastSync": "2026-04-27T13:40:41.920793Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -144,8 +144,20 @@
   },
   "marketRegime": "Bullish",
   "mode": "Paper",
-  "openPositions": 2,
+  "openPositions": 4,
   "orders": [
+    {
+      "detail": "$7,007 at 266.95",
+      "status": "filled",
+      "symbol": "AAPL",
+      "time": "13:40"
+    },
+    {
+      "detail": "$7,007 at 210.51",
+      "status": "filled",
+      "symbol": "NVDA",
+      "time": "13:40"
+    },
     {
       "detail": "$7,007",
       "status": "submitted",
@@ -193,39 +205,83 @@
       "status": "filled",
       "symbol": "QQQ",
       "time": "13:30"
-    },
-    {
-      "detail": "Open order observed.",
-      "status": "submitted",
-      "symbol": "QQQ",
-      "time": "12:00"
-    },
-    {
-      "detail": "$7,000 at 707.96",
-      "status": "filled",
-      "symbol": "SPY",
-      "time": "17:12"
     }
   ],
   "positions": [
     {
-      "marketValue": 7046.421446,
-      "sizePct": 7.0394,
+      "marketValue": 7017.854044,
+      "sizePct": 7.0086,
+      "status": "holding",
+      "symbol": "AAPL",
+      "thesis": "AAPL shows a pullback setup with aligned trend and 4.27% 20-day relative strength versus SPY.",
+      "unrealizedPnlPct": 0.157
+    },
+    {
+      "marketValue": 7020.4383,
+      "sizePct": 7.0112,
+      "status": "holding",
+      "symbol": "NVDA",
+      "thesis": "NVDA shows a pullback setup with aligned trend and 3.41% 20-day relative strength versus SPY.",
+      "unrealizedPnlPct": 0.194
+    },
+    {
+      "marketValue": 7046.740419,
+      "sizePct": 7.0375,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.639
+      "unrealizedPnlPct": 0.644
     },
     {
-      "marketValue": 7054.470591,
-      "sizePct": 7.0475,
+      "marketValue": 7061.401774,
+      "sizePct": 7.0521,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.7779999999999999
+      "unrealizedPnlPct": 0.877
     }
   ],
   "thoughts": [
+    {
+      "action": "HOLD",
+      "headline": "gross exposure exceeds configured limit",
+      "symbol": "SPY",
+      "thesis": "Rule violation or insufficient setup quality",
+      "time": "13:40",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+    },
+    {
+      "action": "HOLD",
+      "headline": "gross exposure exceeds configured limit",
+      "symbol": "QQQ",
+      "thesis": "Rule violation or insufficient setup quality",
+      "time": "13:40",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+    },
+    {
+      "action": "HOLD",
+      "headline": "gross exposure exceeds configured limit",
+      "symbol": "NVDA",
+      "thesis": "Rule violation or insufficient setup quality",
+      "time": "13:40",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.899 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+    },
+    {
+      "action": "HOLD",
+      "headline": "gross exposure exceeds configured limit",
+      "symbol": "AAPL",
+      "thesis": "Rule violation or insufficient setup quality",
+      "time": "13:40",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+    },
     {
       "action": "HOLD",
       "headline": "existing long position already open; new add is blocked",
@@ -260,46 +316,6 @@
       "action": "HOLD",
       "headline": "trend alignment is required",
       "symbol": "MSFT",
-      "thesis": "Rule violation or insufficient setup quality",
-      "time": "13:30",
-      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
-    },
-    {
-      "action": "HOLD",
-      "headline": "trend alignment is required",
-      "symbol": "META",
-      "thesis": "Rule violation or insufficient setup quality",
-      "time": "13:30",
-      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
-    },
-    {
-      "action": "HOLD",
-      "headline": "new position would exceed correlation guard",
-      "symbol": "IWM",
-      "thesis": "Portfolio constraints block new entry",
-      "time": "13:30",
-      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
-    },
-    {
-      "action": "HOLD",
-      "headline": "breakout or pullback setup is required",
-      "symbol": "GOOGL",
-      "thesis": "Rule violation or insufficient setup quality",
-      "time": "13:30",
-      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
-    },
-    {
-      "action": "HOLD",
-      "headline": "trend alignment is required",
-      "symbol": "BRK.B",
       "thesis": "Rule violation or insufficient setup quality",
       "time": "13:30",
       "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
@@ -351,5 +367,5 @@
       "watchlistScore": 74.0
     }
   ],
-  "weeklyPnlPct": 0.0976
+  "weeklyPnlPct": 0.1392
 }
