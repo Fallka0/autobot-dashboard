@@ -87,7 +87,7 @@
   ],
   "equity": 100052.96,
   "exposurePct": 28.072361280731215,
-  "lastSync": "2026-04-27T14:46:01.769692Z",
+  "lastSync": "2026-04-27T14:50:47.707679Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -233,164 +233,164 @@
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:10:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T14:10:01.769692Z",
+        "scheduledLocal": "2026-04-27T10:10:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T14:10:47.707679Z",
         "slotId": "position-watch:2026-04-27T10:10",
         "status": "missed"
       },
       {
         "completedAtUtc": "2026-04-27T14:16:32.695290Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:15:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T14:15:01.769692Z",
+        "scheduledLocal": "2026-04-27T10:15:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T14:15:47.707679Z",
         "slotId": "position-watch:2026-04-27T10:15",
         "status": "completed"
       },
       {
         "completedAtUtc": "2026-04-27T14:21:04.549631Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:20:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T14:20:01.769692Z",
+        "scheduledLocal": "2026-04-27T10:20:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T14:20:47.707679Z",
         "slotId": "position-watch:2026-04-27T10:20",
         "status": "completed"
       },
       {
         "completedAtUtc": "2026-04-27T14:25:39.765548Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:25:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T14:25:01.769692Z",
+        "scheduledLocal": "2026-04-27T10:25:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T14:25:47.707679Z",
         "slotId": "position-watch:2026-04-27T10:25",
         "status": "completed"
       },
       {
         "completedAtUtc": "2026-04-27T14:33:22.552476Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:30:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T14:30:01.769692Z",
+        "scheduledLocal": "2026-04-27T10:30:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T14:30:47.707679Z",
         "slotId": "position-watch:2026-04-27T10:30",
         "status": "completed"
       },
       {
         "completedAtUtc": "2026-04-27T14:37:50.898359Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:35:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T14:35:01.769692Z",
+        "scheduledLocal": "2026-04-27T10:35:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T14:35:47.707679Z",
         "slotId": "position-watch:2026-04-27T10:35",
         "status": "completed"
       },
       {
         "completedAtUtc": "2026-04-27T14:41:05.961977Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:40:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T14:40:01.769692Z",
+        "scheduledLocal": "2026-04-27T10:40:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T14:40:47.707679Z",
         "slotId": "position-watch:2026-04-27T10:40",
         "status": "completed"
       },
       {
         "completedAtUtc": "2026-04-27T14:45:23.657572Z",
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:45:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T14:45:01.769692Z",
+        "scheduledLocal": "2026-04-27T10:45:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T14:45:47.707679Z",
         "slotId": "position-watch:2026-04-27T10:45",
         "status": "completed"
       }
     ],
-    "schedulerUpdatedAtUtc": "2026-04-27T14:45:24.243298Z",
+    "schedulerUpdatedAtUtc": "2026-04-27T14:49:40.960987Z",
     "timezone": "America/New_York",
     "upcoming": [
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:50:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T14:50:01.769692Z",
+        "scheduledLocal": "2026-04-27T10:50:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T14:50:47.707679Z",
         "slotId": "position-watch:2026-04-27T10:50",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T10:55:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T14:55:01.769692Z",
+        "scheduledLocal": "2026-04-27T10:55:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T14:55:47.707679Z",
         "slotId": "position-watch:2026-04-27T10:55",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:00:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T15:00:01.769692Z",
+        "scheduledLocal": "2026-04-27T11:00:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T15:00:47.707679Z",
         "slotId": "position-watch:2026-04-27T11:00",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:05:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T15:05:01.769692Z",
+        "scheduledLocal": "2026-04-27T11:05:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T15:05:47.707679Z",
         "slotId": "position-watch:2026-04-27T11:05",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:10:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T15:10:01.769692Z",
+        "scheduledLocal": "2026-04-27T11:10:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T15:10:47.707679Z",
         "slotId": "position-watch:2026-04-27T11:10",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:15:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T15:15:01.769692Z",
+        "scheduledLocal": "2026-04-27T11:15:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T15:15:47.707679Z",
         "slotId": "position-watch:2026-04-27T11:15",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:20:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T15:20:01.769692Z",
+        "scheduledLocal": "2026-04-27T11:20:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T15:20:47.707679Z",
         "slotId": "position-watch:2026-04-27T11:20",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:25:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T15:25:01.769692Z",
+        "scheduledLocal": "2026-04-27T11:25:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T15:25:47.707679Z",
         "slotId": "position-watch:2026-04-27T11:25",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:30:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T15:30:01.769692Z",
+        "scheduledLocal": "2026-04-27T11:30:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T15:30:47.707679Z",
         "slotId": "position-watch:2026-04-27T11:30",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:35:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T15:35:01.769692Z",
+        "scheduledLocal": "2026-04-27T11:35:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T15:35:47.707679Z",
         "slotId": "position-watch:2026-04-27T11:35",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:40:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T15:40:01.769692Z",
+        "scheduledLocal": "2026-04-27T11:40:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T15:40:47.707679Z",
         "slotId": "position-watch:2026-04-27T11:40",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-27T11:45:01.769692-04:00",
-        "scheduledUtc": "2026-04-27T15:45:01.769692Z",
+        "scheduledLocal": "2026-04-27T11:45:47.707679-04:00",
+        "scheduledUtc": "2026-04-27T15:45:47.707679Z",
         "slotId": "position-watch:2026-04-27T11:45",
         "status": "upcoming"
       }
