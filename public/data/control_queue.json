@@ -565,7 +565,14 @@
         }
       },
       "status": "ok"
+    },
+    {
+      "id": "13a059aa99b04d26878600524b6c9a76",
+      "action": "start_bot",
+      "status": "queued",
+      "requestedAtUtc": "2026-04-28T12:33:22.535Z",
+      "requester": "dashboard-web"
     }
   ],
-  "updatedAtUtc": "2026-04-27T12:23:45.225925Z"
+  "updatedAtUtc": "2026-04-28T12:33:22.536Z"
 }
