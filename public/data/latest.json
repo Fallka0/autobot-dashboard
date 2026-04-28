@@ -1,6 +1,6 @@
 {
   "benchmark": "SPY",
-  "botStatus": "Stopped",
+  "botStatus": "Running",
   "cash": 77539.88,
   "closedOutcomes": 0,
   "decisions": [
@@ -85,9 +85,9 @@
       "timestampUtc": "2026-04-27T20:30:51.315254Z"
     }
   ],
-  "equity": 100184.87,
+  "equity": 99997.7,
   "exposurePct": 22.649378399057507,
-  "lastSync": "2026-04-28T09:17:32.730046Z",
+  "lastSync": "2026-04-28T12:34:24.693201Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
@@ -229,162 +229,162 @@
   ],
   "positions": [
     {
-      "marketValue": 4018.52951,
-      "sizePct": 4.0111,
+      "marketValue": 4039.378884,
+      "sizePct": 4.0395,
       "status": "holding",
       "symbol": "AAPL",
       "thesis": "AAPL shows a pullback setup with aligned trend and 4.27% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.378
+      "unrealizedPnlPct": 0.899
     },
     {
-      "marketValue": 2511.25159,
-      "sizePct": 2.5066,
+      "marketValue": 2507.480865,
+      "sizePct": 2.5075,
       "status": "holding",
       "symbol": "DIA",
       "thesis": "DIA shows a pullback setup with aligned trend and -0.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.386
+      "unrealizedPnlPct": 0.23500000000000001
     },
     {
-      "marketValue": 4008.477562,
-      "sizePct": 4.0011,
+      "marketValue": 3973.345914,
+      "sizePct": 3.9734,
       "status": "holding",
       "symbol": "IWM",
       "thesis": "IWM shows a pullback setup with aligned trend and 0.33% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.148
+      "unrealizedPnlPct": -0.73
     },
     {
-      "marketValue": 4099.033351,
-      "sizePct": 4.0915,
+      "marketValue": 3995.511924,
+      "sizePct": 3.9956,
       "status": "holding",
       "symbol": "NVDA",
       "thesis": "NVDA shows a pullback setup with aligned trend and 3.41% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 2.068
+      "unrealizedPnlPct": -0.51
     },
     {
-      "marketValue": 3999.872438,
-      "sizePct": 3.9925,
+      "marketValue": 3960.088355,
+      "sizePct": 3.9602,
       "status": "holding",
       "symbol": "QQQ",
       "thesis": "QQQ shows a pullback setup with aligned trend and 1.03% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": -0.055999999999999994
+      "unrealizedPnlPct": -1.05
     },
     {
-      "marketValue": 4007.823451,
-      "sizePct": 4.0004,
+      "marketValue": 3982.017197,
+      "sizePct": 3.9821,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.132
+      "unrealizedPnlPct": -0.513
     }
   ],
   "schedule": {
     "recent": [
       {
         "completedAtUtc": null,
-        "name": "premarket-early",
-        "scheduledLocal": "2026-04-28T04:05:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T08:05:32.730046Z",
-        "slotId": "premarket-early:2026-04-28T04:05",
+        "name": "premarket",
+        "scheduledLocal": "2026-04-28T08:00:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T12:00:24.693201Z",
+        "slotId": "premarket:2026-04-28T08:00",
         "status": "missed"
       }
     ],
-    "schedulerUpdatedAtUtc": "2026-04-28T09:17:07.145023Z",
+    "schedulerUpdatedAtUtc": "2026-04-28T12:33:16.351975Z",
     "timezone": "America/New_York",
     "upcoming": [
       {
         "completedAtUtc": null,
-        "name": "premarket",
-        "scheduledLocal": "2026-04-28T08:00:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T12:00:32.730046Z",
-        "slotId": "premarket:2026-04-28T08:00",
-        "status": "upcoming"
-      },
-      {
-        "completedAtUtc": null,
         "name": "open",
-        "scheduledLocal": "2026-04-28T09:30:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T13:30:32.730046Z",
+        "scheduledLocal": "2026-04-28T09:30:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T13:30:24.693201Z",
         "slotId": "open:2026-04-28T09:30",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T09:35:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T13:35:32.730046Z",
+        "scheduledLocal": "2026-04-28T09:35:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T13:35:24.693201Z",
         "slotId": "position-watch:2026-04-28T09:35",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T09:40:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T13:40:32.730046Z",
+        "scheduledLocal": "2026-04-28T09:40:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T13:40:24.693201Z",
         "slotId": "position-watch:2026-04-28T09:40",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T09:45:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T13:45:32.730046Z",
+        "scheduledLocal": "2026-04-28T09:45:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T13:45:24.693201Z",
         "slotId": "position-watch:2026-04-28T09:45",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T09:50:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T13:50:32.730046Z",
+        "scheduledLocal": "2026-04-28T09:50:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T13:50:24.693201Z",
         "slotId": "position-watch:2026-04-28T09:50",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T09:55:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T13:55:32.730046Z",
+        "scheduledLocal": "2026-04-28T09:55:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T13:55:24.693201Z",
         "slotId": "position-watch:2026-04-28T09:55",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T10:00:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T14:00:32.730046Z",
+        "scheduledLocal": "2026-04-28T10:00:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T14:00:24.693201Z",
         "slotId": "position-watch:2026-04-28T10:00",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T10:05:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T14:05:32.730046Z",
+        "scheduledLocal": "2026-04-28T10:05:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T14:05:24.693201Z",
         "slotId": "position-watch:2026-04-28T10:05",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T10:10:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T14:10:32.730046Z",
+        "scheduledLocal": "2026-04-28T10:10:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T14:10:24.693201Z",
         "slotId": "position-watch:2026-04-28T10:10",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T10:15:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T14:15:32.730046Z",
+        "scheduledLocal": "2026-04-28T10:15:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T14:15:24.693201Z",
         "slotId": "position-watch:2026-04-28T10:15",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T10:20:32.730046-04:00",
-        "scheduledUtc": "2026-04-28T14:20:32.730046Z",
+        "scheduledLocal": "2026-04-28T10:20:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T14:20:24.693201Z",
         "slotId": "position-watch:2026-04-28T10:20",
+        "status": "upcoming"
+      },
+      {
+        "completedAtUtc": null,
+        "name": "position-watch",
+        "scheduledLocal": "2026-04-28T10:25:24.693201-04:00",
+        "scheduledUtc": "2026-04-28T14:25:24.693201Z",
+        "slotId": "position-watch:2026-04-28T10:25",
         "status": "upcoming"
       }
     ]
