@@ -6,142 +6,130 @@
   "decisions": [
     {
       "action": "HOLD",
-      "confidence": 0.6,
-      "summary": "trend alignment is required",
-      "symbol": "XLV",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.53,
-      "summary": "trend alignment is required",
-      "symbol": "XLI",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.53,
-      "summary": "trend alignment is required",
-      "symbol": "XLF",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.8,
-      "summary": "existing long position already open; new add is blocked",
+      "confidence": 0.76,
+      "summary": "spread is not reasonable",
       "symbol": "SPY",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z"
-    },
-    {
-      "action": "HOLD",
-      "confidence": 0.72,
-      "summary": "breakout or pullback setup is required",
-      "symbol": "SMH",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z"
+      "time": "20:38",
+      "timestampUtc": "2026-04-23T20:38:13.726214Z"
     },
     {
       "action": "HOLD",
       "confidence": 0.8,
       "summary": "existing long position already open; new add is blocked",
       "symbol": "QQQ",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z"
+      "time": "20:38",
+      "timestampUtc": "2026-04-23T20:38:13.726214Z"
     },
     {
       "action": "HOLD",
       "confidence": 0.8,
       "summary": "existing long position already open; new add is blocked",
-      "symbol": "NVDA",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z"
+      "symbol": "SPY",
+      "time": "19:14",
+      "timestampUtc": "2026-04-23T19:14:53.960523Z"
     },
     {
       "action": "HOLD",
-      "confidence": 0.6,
-      "summary": "trend alignment is required",
-      "symbol": "MSFT",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z"
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "time": "19:14",
+      "timestampUtc": "2026-04-23T19:14:53.960523Z"
     },
     {
       "action": "HOLD",
-      "confidence": 0.53,
-      "summary": "trend alignment is required",
-      "symbol": "META",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z"
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "SPY",
+      "time": "18:46",
+      "timestampUtc": "2026-04-23T18:46:27.040235Z"
     },
     {
       "action": "HOLD",
-      "confidence": 0.53,
-      "summary": "trend alignment is required",
-      "symbol": "JPM",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z"
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "time": "18:46",
+      "timestampUtc": "2026-04-23T18:46:27.040235Z"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "SPY",
+      "time": "18:03",
+      "timestampUtc": "2026-04-23T18:03:37.476289Z"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "time": "18:03",
+      "timestampUtc": "2026-04-23T18:03:37.476289Z"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "SPY",
+      "time": "17:29",
+      "timestampUtc": "2026-04-23T17:29:06.776242Z"
+    },
+    {
+      "action": "HOLD",
+      "confidence": 0.8,
+      "summary": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "time": "17:29",
+      "timestampUtc": "2026-04-23T17:29:06.776242Z"
     }
   ],
-  "equity": 99997.7,
-  "exposurePct": 22.649378399057507,
-  "lastSync": "2026-04-28T12:34:24.693201Z",
+  "equity": 100012.7,
+  "exposurePct": 7.026182515482053,
+  "lastSync": "2026-04-28T12:37:54.052842Z",
   "learning": {
     "closedWithPnl": 0,
     "note": "The bot is still collecting enough closed trade outcomes before changing behavior materially.",
-    "openTrackedOutcomes": 17
+    "openTrackedOutcomes": 8
   },
   "marketNews": {
     "blocking": [],
-    "headline": "stock futures today: Why are US stock market futures up today, and will S&P 500, Dow Jones and Nasdaq stay in green or turn red again? Wall Street futures, stocks to watch, analyst. Major companies including Boeing, Tesla, and Adobe moved in premarket trading.",
+    "headline": "Market Up on Extended Ceasefire; Tesla Due Later: The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations .",
     "items": [
       {
         "kind": "headline",
-        "summary": "Major companies including Boeing, Tesla, and Adobe moved in premarket trading. Analysts say markets want stability but risks remain. Investors are now watching earnings, geopolitics, inflation, and consumer strength.",
-        "title": "stock futures today: Why are US stock market futures up today, and will S&P 500, Dow Jones and Nasdaq stay in green or turn red again? Wall Street futures, stocks to watch, analyst",
-        "url": "https://economictimes.indiatimes.com/news/international/us/why-are-us-stock-market-futures-up-today-and-will-sp-500-dow-jones-and-nasdaq-stay-in-green-or-turn-red-again-wall-street-futures-stocks-to-watch-analysts-insights-investor-guide-and-market-outlook/articleshow/130437160.cms"
+        "summary": "The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations.",
+        "title": "Market Up on Extended Ceasefire; Tesla Due Later",
+        "url": "https://www.schwab.com/learn/story/stock-market-update-open"
       },
       {
         "kind": "headline",
-        "summary": "Warsh, who is on track to succeed current Chair Jerome Powell, wants to lower interest rates and shrink the Fed's balance sheet. Inflation may get in the way. ... Consumers are already feeling the effects of the closure of the Strait of Hormuz with energy pric",
+        "summary": "As part of our opportunistic asset-allocation guidance, we recommend that investors take a global approach to overweighting equities relative to bonds. Specifically, we see attractive opportunities in U.S. large- and mid-cap stocks, as well as international de",
+        "title": "Stock Market News Today | Edward Jones",
+        "url": "https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/daily-market-recap"
+      },
+      {
+        "kind": "headline",
+        "summary": "Markets are transitioning from geopolitical risk and focusing more on earnings, says Kevin Green, pointing out the \"oil higher, stocks higher\" trend as a key indicator. Don't discredit headlines aroun... ... HIGHLIGHTS: Stocks: In March, the S&P 500 Index post",
         "title": "Today's Stock Market News and Breaking Stories",
         "url": "https://stockanalysis.com/news/"
       },
       {
         "kind": "headline",
-        "summary": "Here you can find premarket quotes for relevant stock market futures and world markets indices, commodities and currencies.",
-        "title": "Premarket | Futures | Pre-market Trading | Markets Insider",
-        "url": "https://markets.businessinsider.com/premarket"
+        "summary": "\"It is important to remember that the market was not cheap before the war started, and the recent rally has only brought us back slightly past breakeven for the year,\" he said. \"We expect investors will soon once again turn their attention to more fundamental ",
+        "title": "Stock market news for April 20, 2026",
+        "url": "https://www.cnbc.com/2026/04/19/stock-market-today-live-updates.html"
       },
       {
         "kind": "headline",
-        "summary": "Earlier in the session, US stock futures had opened lower after President Donald Trump cancelled plans to send senior envoys for a second round of talks with Iran, while Tehran reiterated it would not engage in negotiations under threats or blockade conditions",
-        "title": "United States Stock Market Index - Quote - Chart - Historical Data - News | Trading Economics",
-        "url": "https://tradingeconomics.com/united-states/stock-market"
-      },
-      {
-        "kind": "headline",
-        "summary": "The coming week brings a host of ... and, perhaps most important, the Fed's favorite inflation reading, Personal Consumption Expenditures (PCE) prices ....",
-        "title": "Schwab Market Update | Charles Schwab",
-        "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+        "summary": "In a much-anticipated hearing before the Senate Banking Committee, the former Fed governor will face questioning over a variety of subjects, from monetary policy to banking regulation to his own complicated personal finances \u00b7 None likely will be more importan",
+        "title": "Stock market news for April 21, 2026",
+        "url": "https://www.cnbc.com/2026/04/20/stock-market-today-live-updates.html"
       },
       {
         "kind": "memory",
         "summary": "Market Up on Extended Ceasefire; Tesla Due Later: The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations. | Stock Ma",
-        "title": "Persistent war risk",
-        "url": "https://www.schwab.com/learn/story/stock-market-update-open"
-      },
-      {
-        "kind": "memory",
-        "summary": "Market Up on Extended Ceasefire; Tesla Due Later. The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations . Across mu",
-        "title": "Persistent war risk",
-        "url": "https://www.schwab.com/learn/story/stock-market-update-open"
-      },
-      {
-        "kind": "memory",
-        "summary": "Market Up on Extended Ceasefire; Tesla Due Later. The S&P 500 Index ended well off its highs and the small-cap Russell 2000 (RUT) index fell 1%. Earnings early today generally impressed, with most companies exceeding profit and revenue expectations . Across mu",
         "title": "Persistent war risk",
         "url": "https://www.schwab.com/learn/story/stock-market-update-open"
       }
@@ -157,46 +145,60 @@
   "openPositions": 6,
   "orders": [
     {
-      "detail": "$2,502 at 490.94",
+      "detail": "at 658.22",
       "status": "filled",
-      "symbol": "DIA",
-      "time": "15:01",
-      "timestampUtc": "2026-04-27T15:01:42.132151Z"
+      "symbol": "QQQ",
+      "time": "13:30",
+      "timestampUtc": "2026-04-24T13:30:01.182492Z"
     },
     {
-      "detail": "$4,003 at 276.85",
+      "detail": "$7,002 at 658.52",
       "status": "filled",
-      "symbol": "IWM",
-      "time": "15:01",
-      "timestampUtc": "2026-04-27T15:01:42.486709Z"
+      "symbol": "QQQ",
+      "time": "13:33",
+      "timestampUtc": "2026-04-24T13:33:11.141141Z"
     },
     {
-      "detail": "$4,003 at 713.46",
+      "detail": "$7,007 at 266.95",
+      "status": "filled",
+      "symbol": "AAPL",
+      "time": "13:33",
+      "timestampUtc": "2026-04-27T13:33:21.058206Z"
+    },
+    {
+      "detail": "$7,007 at 210.51",
+      "status": "filled",
+      "symbol": "NVDA",
+      "time": "13:34",
+      "timestampUtc": "2026-04-27T13:34:34.403247Z"
+    },
+    {
+      "detail": "at 267.21",
+      "status": "filled",
+      "symbol": "AAPL",
+      "time": "14:37",
+      "timestampUtc": "2026-04-27T14:37:41.070867Z"
+    },
+    {
+      "detail": "at 208.89",
+      "status": "filled",
+      "symbol": "NVDA",
+      "time": "14:37",
+      "timestampUtc": "2026-04-27T14:37:45.67238Z"
+    },
+    {
+      "detail": "at 662.50",
+      "status": "filled",
+      "symbol": "QQQ",
+      "time": "14:37",
+      "timestampUtc": "2026-04-27T14:37:46.363858Z"
+    },
+    {
+      "detail": "at 713.79",
       "status": "filled",
       "symbol": "SPY",
-      "time": "15:01",
-      "timestampUtc": "2026-04-27T15:01:43.828104629Z"
-    },
-    {
-      "detail": "$4,003",
-      "status": "submitted",
-      "symbol": "SPY",
-      "time": "15:00",
-      "timestampUtc": "2026-04-27T15:00:29.015361Z"
-    },
-    {
-      "detail": "$4,003",
-      "status": "submitted",
-      "symbol": "IWM",
-      "time": "15:00",
-      "timestampUtc": "2026-04-27T15:00:29.015361Z"
-    },
-    {
-      "detail": "$2,502",
-      "status": "submitted",
-      "symbol": "DIA",
-      "time": "15:00",
-      "timestampUtc": "2026-04-27T15:00:29.015361Z"
+      "time": "14:37",
+      "timestampUtc": "2026-04-27T14:37:47.695692Z"
     },
     {
       "detail": "$4,002 at 266.82",
@@ -211,70 +213,56 @@
       "symbol": "NVDA",
       "time": "14:56",
       "timestampUtc": "2026-04-27T14:56:07.595671Z"
-    },
-    {
-      "detail": "$4,002 at 661.92",
-      "status": "filled",
-      "symbol": "QQQ",
-      "time": "14:56",
-      "timestampUtc": "2026-04-27T14:56:09.822979Z"
-    },
-    {
-      "detail": "$4,002",
-      "status": "submitted",
-      "symbol": "QQQ",
-      "time": "14:55",
-      "timestampUtc": "2026-04-27T14:55:12.101075Z"
     }
   ],
   "positions": [
     {
-      "marketValue": 4039.378884,
-      "sizePct": 4.0395,
+      "marketValue": 4038.628907,
+      "sizePct": 4.0381,
       "status": "holding",
       "symbol": "AAPL",
-      "thesis": "AAPL shows a pullback setup with aligned trend and 4.27% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.899
+      "thesis": "The bot is monitoring this open paper position.",
+      "unrealizedPnlPct": 0.88
     },
     {
-      "marketValue": 2507.480865,
-      "sizePct": 2.5075,
+      "marketValue": 2508.49998,
+      "sizePct": 2.5082,
       "status": "holding",
       "symbol": "DIA",
-      "thesis": "DIA shows a pullback setup with aligned trend and -0.42% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": 0.23500000000000001
+      "thesis": "The bot is monitoring this open paper position.",
+      "unrealizedPnlPct": 0.27599999999999997
     },
     {
-      "marketValue": 3973.345914,
-      "sizePct": 3.9734,
+      "marketValue": 3977.394006,
+      "sizePct": 3.9769,
       "status": "holding",
       "symbol": "IWM",
-      "thesis": "IWM shows a pullback setup with aligned trend and 0.33% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": -0.73
+      "thesis": "The bot is monitoring this open paper position.",
+      "unrealizedPnlPct": -0.628
     },
     {
-      "marketValue": 3995.511924,
-      "sizePct": 3.9956,
+      "marketValue": 4001.164247,
+      "sizePct": 4.0007,
       "status": "holding",
       "symbol": "NVDA",
-      "thesis": "NVDA shows a pullback setup with aligned trend and 3.41% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": -0.51
+      "thesis": "The bot is monitoring this open paper position.",
+      "unrealizedPnlPct": -0.369
     },
     {
-      "marketValue": 3960.088355,
-      "sizePct": 3.9602,
+      "marketValue": 3963.659853,
+      "sizePct": 3.9632,
       "status": "holding",
       "symbol": "QQQ",
-      "thesis": "QQQ shows a pullback setup with aligned trend and 1.03% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": -1.05
+      "thesis": "QQQ shows a pullback setup with aligned trend and 1.42% 20-day relative strength versus SPY.",
+      "unrealizedPnlPct": -0.9610000000000001
     },
     {
-      "marketValue": 3982.017197,
-      "sizePct": 3.9821,
+      "marketValue": 3983.475812,
+      "sizePct": 3.983,
       "status": "holding",
       "symbol": "SPY",
       "thesis": "SPY shows a pullback setup with aligned trend and 0.00% 20-day relative strength versus SPY.",
-      "unrealizedPnlPct": -0.513
+      "unrealizedPnlPct": -0.477
     }
   ],
   "schedule": {
@@ -282,108 +270,108 @@
       {
         "completedAtUtc": null,
         "name": "premarket",
-        "scheduledLocal": "2026-04-28T08:00:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T12:00:24.693201Z",
+        "scheduledLocal": "2026-04-28T08:00:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T12:00:54.052842Z",
         "slotId": "premarket:2026-04-28T08:00",
         "status": "missed"
       }
     ],
-    "schedulerUpdatedAtUtc": "2026-04-28T12:33:16.351975Z",
+    "schedulerUpdatedAtUtc": "2026-04-28T12:37:48.472640Z",
     "timezone": "America/New_York",
     "upcoming": [
       {
         "completedAtUtc": null,
         "name": "open",
-        "scheduledLocal": "2026-04-28T09:30:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T13:30:24.693201Z",
+        "scheduledLocal": "2026-04-28T09:30:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T13:30:54.052842Z",
         "slotId": "open:2026-04-28T09:30",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T09:35:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T13:35:24.693201Z",
+        "scheduledLocal": "2026-04-28T09:35:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T13:35:54.052842Z",
         "slotId": "position-watch:2026-04-28T09:35",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T09:40:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T13:40:24.693201Z",
+        "scheduledLocal": "2026-04-28T09:40:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T13:40:54.052842Z",
         "slotId": "position-watch:2026-04-28T09:40",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T09:45:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T13:45:24.693201Z",
+        "scheduledLocal": "2026-04-28T09:45:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T13:45:54.052842Z",
         "slotId": "position-watch:2026-04-28T09:45",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T09:50:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T13:50:24.693201Z",
+        "scheduledLocal": "2026-04-28T09:50:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T13:50:54.052842Z",
         "slotId": "position-watch:2026-04-28T09:50",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T09:55:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T13:55:24.693201Z",
+        "scheduledLocal": "2026-04-28T09:55:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T13:55:54.052842Z",
         "slotId": "position-watch:2026-04-28T09:55",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T10:00:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T14:00:24.693201Z",
+        "scheduledLocal": "2026-04-28T10:00:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T14:00:54.052842Z",
         "slotId": "position-watch:2026-04-28T10:00",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T10:05:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T14:05:24.693201Z",
+        "scheduledLocal": "2026-04-28T10:05:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T14:05:54.052842Z",
         "slotId": "position-watch:2026-04-28T10:05",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T10:10:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T14:10:24.693201Z",
+        "scheduledLocal": "2026-04-28T10:10:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T14:10:54.052842Z",
         "slotId": "position-watch:2026-04-28T10:10",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T10:15:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T14:15:24.693201Z",
+        "scheduledLocal": "2026-04-28T10:15:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T14:15:54.052842Z",
         "slotId": "position-watch:2026-04-28T10:15",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T10:20:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T14:20:24.693201Z",
+        "scheduledLocal": "2026-04-28T10:20:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T14:20:54.052842Z",
         "slotId": "position-watch:2026-04-28T10:20",
         "status": "upcoming"
       },
       {
         "completedAtUtc": null,
         "name": "position-watch",
-        "scheduledLocal": "2026-04-28T10:25:24.693201-04:00",
-        "scheduledUtc": "2026-04-28T14:25:24.693201Z",
+        "scheduledLocal": "2026-04-28T10:25:54.052842-04:00",
+        "scheduledUtc": "2026-04-28T14:25:54.052842Z",
         "slotId": "position-watch:2026-04-28T10:25",
         "status": "upcoming"
       }
@@ -392,66 +380,44 @@
   "thoughts": [
     {
       "action": "HOLD",
-      "headline": "trend alignment is required",
-      "symbol": "XLV",
+      "headline": "spread is not reasonable",
+      "symbol": "SPY",
       "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z",
-      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
+      "time": "20:38",
+      "timestampUtc": "2026-04-23T20:38:13.726214Z",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.76, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "headline": "trend alignment is required",
-      "symbol": "XLI",
-      "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z",
-      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
-    },
-    {
-      "action": "HOLD",
-      "headline": "trend alignment is required",
-      "symbol": "XLF",
-      "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z",
-      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
+      "headline": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "20:38",
+      "timestampUtc": "2026-04-23T20:38:13.726214Z",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
       "headline": "existing long position already open; new add is blocked",
       "symbol": "SPY",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z",
+      "time": "19:14",
+      "timestampUtc": "2026-04-23T19:14:53.960523Z",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
-    },
-    {
-      "action": "HOLD",
-      "headline": "breakout or pullback setup is required",
-      "symbol": "SMH",
-      "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z",
-      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
     },
     {
       "action": "HOLD",
       "headline": "existing long position already open; new add is blocked",
       "symbol": "QQQ",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z",
+      "time": "19:14",
+      "timestampUtc": "2026-04-23T19:14:53.960523Z",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
       "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
@@ -459,69 +425,91 @@
     {
       "action": "HOLD",
       "headline": "existing long position already open; new add is blocked",
-      "symbol": "NVDA",
+      "symbol": "SPY",
       "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z",
+      "time": "18:46",
+      "timestampUtc": "2026-04-23T18:46:27.040235Z",
       "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
       "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
-      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.899 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     },
     {
       "action": "HOLD",
-      "headline": "trend alignment is required",
-      "symbol": "MSFT",
-      "thesis": "Rule violation or insufficient setup quality",
-      "time": "20:30",
-      "timestampUtc": "2026-04-27T20:30:51.315254Z",
-      "whatCanBreakIt": "The main concern is that the setup never develops real relative strength and simply drifts without confirming the thesis.",
-      "whatWouldChangeMind": "AutoBot would change its mind if price damage reaches roughly 0% or if the broader thesis clearly stops matching the tape.",
-      "whyItCanWork": "AutoBot is not pressing harder here, but it still sees enough structure to avoid treating the position as broken."
+      "headline": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "18:46",
+      "timestampUtc": "2026-04-23T18:46:27.040235Z",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+    },
+    {
+      "action": "HOLD",
+      "headline": "existing long position already open; new add is blocked",
+      "symbol": "SPY",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "18:03",
+      "timestampUtc": "2026-04-23T18:03:37.476289Z",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
+    },
+    {
+      "action": "HOLD",
+      "headline": "existing long position already open; new add is blocked",
+      "symbol": "QQQ",
+      "thesis": "Existing long position is already open; duplicate BUY/add is blocked.",
+      "time": "18:03",
+      "timestampUtc": "2026-04-23T18:03:37.476289Z",
+      "whatCanBreakIt": "What worries AutoBot most is that Research risk: Brave search is context only; no direct order signal is inferred; and Research risk: Market news risk keywords: fed, inflation, war.",
+      "whatWouldChangeMind": "AutoBot would change its mind if stop loss or drawdown reaches 4.0%; Trend alignment, 50dma, or 200dma condition breaks; and Research turns materially negative or contradicts the setup.",
+      "whyItCanWork": "AutoBot still thinks this can work because The decision engine accepted a pullback setup with confidence 0.8; Reward/risk was estimated at 1.8 against the configured floor; and Trend alignment passed, reducing the chance of fighting the primary move. Right now its conviction is around 0.80, so this is a monitored stance rather than blind certainty."
     }
   ],
   "watchlist": [
     {
-      "confidence": 0.72,
-      "relativeStrengthPct": 0.4878,
-      "setup": "none",
-      "symbol": "AMD",
-      "watchlistScore": 129.78
-    },
-    {
       "confidence": 0.8,
-      "relativeStrengthPct": 0.0427,
-      "setup": "pullback",
-      "symbol": "AAPL",
-      "watchlistScore": 93.27
-    },
-    {
-      "confidence": 0.8,
-      "relativeStrengthPct": 0.0341,
-      "setup": "pullback",
-      "symbol": "NVDA",
-      "watchlistScore": 92.905
-    },
-    {
-      "confidence": 0.8,
-      "relativeStrengthPct": 0.0103,
+      "relativeStrengthPct": 0.0142,
       "setup": "pullback",
       "symbol": "QQQ",
-      "watchlistScore": 90.03
+      "watchlistScore": 90.42
     },
     {
       "confidence": 0.72,
-      "relativeStrengthPct": 0.0855,
+      "relativeStrengthPct": 0.0562,
       "setup": "none",
-      "symbol": "SMH",
-      "watchlistScore": 89.55
+      "symbol": "NVDA",
+      "watchlistScore": 86.62
     },
     {
-      "confidence": 0.8,
-      "relativeStrengthPct": 0.0033,
-      "setup": "pullback",
+      "confidence": 0.72,
+      "relativeStrengthPct": 0.0431,
+      "setup": "none",
+      "symbol": "AAPL",
+      "watchlistScore": 85.31
+    },
+    {
+      "confidence": 0.72,
+      "relativeStrengthPct": 0.0179,
+      "setup": "none",
       "symbol": "IWM",
-      "watchlistScore": 89.33
+      "watchlistScore": 82.79
+    },
+    {
+      "confidence": 0.69,
+      "relativeStrengthPct": -0.0058,
+      "setup": "pullback",
+      "symbol": "MSFT",
+      "watchlistScore": 77.42
+    },
+    {
+      "confidence": 0.65,
+      "relativeStrengthPct": -0.0329,
+      "setup": "none",
+      "symbol": "GOOGL",
+      "watchlistScore": 70.71
     }
   ],
-  "weeklyPnlPct": 0.2447
+  "weeklyPnlPct": 0.0013
 }
